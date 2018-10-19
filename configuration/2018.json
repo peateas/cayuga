@@ -15,13 +15,14 @@
       "predicates": {
         "inverse#relation": "relation#have#inverse#relation",
         "domain#category": "relation",
-        "co-domain#category": "relation",
-        "co-image#category": "relation",
         "image#category": "relation",
         "singularity#singularity": "singular",
-        "co-singularity#singularity": "singular",
         "completeness#completeness": "complete",
-        "co-completeness#completeness": "complete"
+        "co-domain#category": "relation",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "singular",
+        "co-completeness#completeness": "complete",
+        "mutability": "mutable"
       }
     },
     {
@@ -29,27 +30,74 @@
       "predicates": {
         "inverse#relation": "category#be#domain#of#relation",
         "domain#category": "relation",
+        "image#category": "domain#category#of#relations",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
         "co-domain#category": "category",
         "co-image#category": "relation",
-        "image#category": "category",
-        "singularity#singularity": "singular",
         "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
+      }
+    },
+    {
+      "subject": "relation relation#have#image#category",
+      "predicates": {
+        "inverse#relation": "category#be#image#of#relation",
+        "domain#category": "relation",
+        "image#category": "image#category#of#relations",
+        "singularity#singularity": "singularity",
         "completeness#completeness": "complete",
-        "co-completeness#completeness": "partial"
+        "co-domain#category": "category",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
+      }
+    },
+    {
+      "subject": "relation relation#have#singularity#singularity",
+      "predicates": {
+        "inverse#relation": "category#be#singularity#of#relation",
+        "domain#category": "relation",
+        "image#category": "singularity#singularity#of#relations",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-domain#category": "singularity",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
+      }
+    },
+    {
+      "subject": "relation relation#have#complexity#complexity",
+      "predicates": {
+        "inverse#relation": "complexity#be#complexity#of#relation",
+        "domain#category": "relation",
+        "image": "complexity#complexity#of#relations",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-domain#category": "complexity",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
       }
     },
     {
       "subject": "relation relation#have#co-domain#category",
       "predicates": {
-        "inverse#relation": "category#be#domain#of#relation",
+        "inverse#relation": "category#be#co-domain#of#relation",
         "domain#category": "relation",
-        "co-domain#category": "",
-        "co-image#category": "",
-        "image#category": "",
-        "singularity#singularity": "",
-        "co-singularity#singularity": "",
-        "completeness#completeness": "",
-        "co-completeness#completeness": ""
+        "image#category": "co-domain#category#of#relation",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-domain#category": "category",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
       }
     },
     {
@@ -57,83 +105,59 @@
       "predicates": {
         "inverse#relation": "category#be#co-image#of#relation",
         "domain#category": "relation",
-        "co-domain#category": "",
-        "co-image#category": "",
-        "image#category": "",
-        "singularity#singularity": "",
-        "co-singularity#singularity": "",
-        "completeness#completeness": "",
-        "co-completeness#completeness": ""
+        "image#category": "co-image#category#of#relation",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-domain#category": "category",
+        "co-singularity#singularity": "plural",
+        "co-image#category": "relation",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
       }
     },
     {
-      "subject": "relation relation#have#image#category",
+      "subject": "relation relation#have#co-singularity#singularity",
       "predicates": {
-        "inverse#relation": "category#be#image#of#relation",
-        "domain#category": "",
-        "co-domain#category": "",
-        "co-image#category": "",
-        "image#category": "",
-        "singularity#singularity": "",
-        "co-singularity#singularity": "",
-        "completeness#completeness": "",
-        "co-completeness#completeness": ""
+        "inverse#relation": "singularity#be#co-singularity#of#relation",
+        "domain#category": "relation",
+        "image#category": "co-singularity#singularity#of#relations",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-domain#category": "singularity",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
       }
     },
     {
-      "subject": "relation relation#have#singularity#singulary",
+      "subject": "relation relation#have#co-complexity#complexity",
       "predicates": {
-        "inverse#relation": "category#be#singularity#of#relation",
-        "domain#category": "",
-        "co-domain#category": "",
-        "co-image#category": "",
-        "image#category": "",
-        "singularity#singularity": "",
-        "co-singularity#singularity": "",
-        "completeness#completeness": "",
-        "co-completeness#completeness": ""
+        "inverse#relation": "complexity#be#co-complexity#of#relation",
+        "domain#category": "relation",
+        "image#category": "co-complexity#complexity#of#relations",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-domain#category": "complexity",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
       }
     },
     {
-      "subject": "",
+      "subject": "relation relation#have#mutability#mutability",
       "predicates": {
-        "inverse#relation": "",
-        "domain#category": "",
-        "co-domain#category": "",
-        "co-image#category": "",
-        "image#category": "",
-        "singularity#singularity": "",
-        "co-singularity#singularity": "",
-        "completeness#completeness": "",
-        "co-completeness#completeness": ""
-      }
-    },
-    {
-      "subject": "",
-      "predicates": {
-        "inverse#relation": "",
-        "domain#category": "",
-        "co-domain#category": "",
-        "co-image#category": "",
-        "image#category": "",
-        "singularity#singularity": "",
-        "co-singularity#singularity": "",
-        "completeness#completeness": "",
-        "co-completeness#completeness": ""
-      }
-    },
-    {
-      "subject": "",
-      "predicates": {
-        "inverse#relation": "",
-        "domain#category": "",
-        "co-domain#category": "",
-        "co-image#category": "",
-        "image#category": "",
-        "singularity#singularity": "",
-        "co-singularity#singularity": "",
-        "completeness#completeness": "",
-        "co-completeness#completeness": ""
+        "inverse#relation": "mutability#be#mutability#of#relation",
+        "domain#category": "relation",
+        "image#category": "mutability#mutability#of#relations",
+        "singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-domain#category": "mutability",
+        "co-image#category": "relation",
+        "co-singularity#singularity": "plural",
+        "co-completeness#completeness": "partial",
+        "mutability": "mutable"
       }
     }
   ]
