@@ -1,0 +1,23 @@
+{
+  "tag-language": "english",
+  "system": "/us/cayuga/system/2018",
+  "context": "system",
+  "topics": [
+    "category relation"
+  ],
+  "document": "reports",
+  "location": "earth",
+  "time": "2018",
+  "reports": "agent Patrick do report events here and now",
+  "events": "agent Patrick do cause occurrences here and now",
+  "occurrences": "relationships do occur time always location universe",
+  "relationships": [
+    {
+      "subjects": [
+      ],
+      "predicate": [
+        "thing#be#category#category category"
+      ]
+    }
+  ]
+}
