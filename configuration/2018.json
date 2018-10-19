@@ -1,0 +1,140 @@
+{
+  "tag-language": "english",
+  "system": "/us/cayuga/system/2018",
+  "context": "system",
+  "topics":  ["category relation"],
+  "document": "reports",
+  "location": "earth",
+  "time": "2018",
+  "reports": "agent Patrick do report events here and now",
+  "events": "agent Patrick do cause occurrences here and now",
+  "occurrences": "relationships do occur time always location universe",
+  "relationships": [
+    {
+      "subject": "relation relation#have#inverse#relation",
+      "predicates": {
+        "inverse#relation": "relation#have#inverse#relation",
+        "domain#category": "relation",
+        "co-domain#category": "relation",
+        "co-image#category": "relation",
+        "image#category": "relation",
+        "singularity#singularity": "singular",
+        "co-singularity#singularity": "singular",
+        "completeness#completeness": "complete",
+        "co-completeness#completeness": "complete"
+      }
+    },
+    {
+      "subject": "relation relation#have#domain#category",
+      "predicates": {
+        "inverse#relation": "category#be#domain#of#relation",
+        "domain#category": "relation",
+        "co-domain#category": "category",
+        "co-image#category": "relation",
+        "image#category": "category",
+        "singularity#singularity": "singular",
+        "co-singularity#singularity": "plural",
+        "completeness#completeness": "complete",
+        "co-completeness#completeness": "partial"
+      }
+    },
+    {
+      "subject": "relation relation#have#co-domain#category",
+      "predicates": {
+        "inverse#relation": "category#be#domain#of#relation",
+        "domain#category": "relation",
+        "co-domain#category": "",
+        "co-image#category": "",
+        "image#category": "",
+        "singularity#singularity": "",
+        "co-singularity#singularity": "",
+        "completeness#completeness": "",
+        "co-completeness#completeness": ""
+      }
+    },
+    {
+      "subject": "relation relation#have#co-image#category",
+      "predicates": {
+        "inverse#relation": "category#be#co-image#of#relation",
+        "domain#category": "relation",
+        "co-domain#category": "",
+        "co-image#category": "",
+        "image#category": "",
+        "singularity#singularity": "",
+        "co-singularity#singularity": "",
+        "completeness#completeness": "",
+        "co-completeness#completeness": ""
+      }
+    },
+    {
+      "subject": "relation relation#have#image#category",
+      "predicates": {
+        "inverse#relation": "category#be#image#of#relation",
+        "domain#category": "",
+        "co-domain#category": "",
+        "co-image#category": "",
+        "image#category": "",
+        "singularity#singularity": "",
+        "co-singularity#singularity": "",
+        "completeness#completeness": "",
+        "co-completeness#completeness": ""
+      }
+    },
+    {
+      "subject": "relation relation#have#singularity#singulary",
+      "predicates": {
+        "inverse#relation": "category#be#singularity#of#relation",
+        "domain#category": "",
+        "co-domain#category": "",
+        "co-image#category": "",
+        "image#category": "",
+        "singularity#singularity": "",
+        "co-singularity#singularity": "",
+        "completeness#completeness": "",
+        "co-completeness#completeness": ""
+      }
+    },
+    {
+      "subject": "",
+      "predicates": {
+        "inverse#relation": "",
+        "domain#category": "",
+        "co-domain#category": "",
+        "co-image#category": "",
+        "image#category": "",
+        "singularity#singularity": "",
+        "co-singularity#singularity": "",
+        "completeness#completeness": "",
+        "co-completeness#completeness": ""
+      }
+    },
+    {
+      "subject": "",
+      "predicates": {
+        "inverse#relation": "",
+        "domain#category": "",
+        "co-domain#category": "",
+        "co-image#category": "",
+        "image#category": "",
+        "singularity#singularity": "",
+        "co-singularity#singularity": "",
+        "completeness#completeness": "",
+        "co-completeness#completeness": ""
+      }
+    },
+    {
+      "subject": "",
+      "predicates": {
+        "inverse#relation": "",
+        "domain#category": "",
+        "co-domain#category": "",
+        "co-image#category": "",
+        "image#category": "",
+        "singularity#singularity": "",
+        "co-singularity#singularity": "",
+        "completeness#completeness": "",
+        "co-completeness#completeness": ""
+      }
+    }
+  ]
+}

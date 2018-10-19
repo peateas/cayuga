@@ -1,4 +1,3 @@
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "cayuga/version"
@@ -10,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["peateas@gmail.com"]
 
   spec.summary       = %q{Holder for Cayuga applications and utilities.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = ""
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -33,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "semantic_logger"
 end
