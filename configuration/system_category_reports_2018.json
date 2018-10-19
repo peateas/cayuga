@@ -1,0 +1,50 @@
+{
+  "tag-language": "english",
+  "system": "/us/cayuga/system/2018",
+  "context": "system",
+  "topics": [
+    "category category"
+  ],
+  "document": "reports",
+  "location": "earth",
+  "time": "2018",
+  "reports": "agent Patrick do report events here and now",
+  "events": "agent Patrick do cause occurrences here and now",
+  "occurrences": "relationships do occur time always location universe",
+  "relationships": [
+    {
+      "subject": "category category",
+      "predicates": {
+        "type-type": "referential",
+        "definitive-relations": [
+          "category-have-type-type",
+          "category-have-definitive-relations"
+        ]
+      }
+    },
+    {
+      "subject": "category descriptive-category",
+      "predicates": {
+        "type-type":  "referential",
+        "definitive-relations"
+      }
+    },
+
+        "referential-category#have#"
+        "descriptive-category#have#definitive#relations": [
+        "category#have#complexity#complexity": "complex",
+        "complex-category#have#type#type":  "inclusive",
+        "inclusive-category#have#included#categories": [
+          "inclusive-category",
+          "exclusive-category",
+          "restrictive-category",
+          ""
+        ],
+        "simple-category#have#descriptiveness#descriptiveness":  "descriptive",
+          "category#have#complexity#complexity"
+        ]
+
+      }
+    }
+  ]
+}
