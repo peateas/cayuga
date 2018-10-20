@@ -16,9 +16,11 @@
       "subject": "category category",
       "predicates": {
         "type-type": "referential",
+        "mandatory_predicates": [
+          "thing#be#instance#of#category thing"
+        ],
         "definitive-relations": [
-          "category#have#type#type",
-          "category#have#definitive#relations"
+          "category#have#type#type"
         ]
       }
     },
@@ -27,8 +29,8 @@
       "predicates": {
         "type type": "referential",
         "mandatory#predicates": [
-          "thing#be#ca#tegory#category",
-          "category#have#type#type#descriptive"
+          "thing#be#instance#of#category category",
+          "category#have#type#type descriptive"
         ],
         "definitive relations": [
           "descriptive-category#have#differentiator#relation"
