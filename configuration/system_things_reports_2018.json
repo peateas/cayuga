@@ -14,15 +14,15 @@
   "relationships": [
     {
       "subjects": [
-        "category category",
-        "category descriptive-category",
-        "category referential-category",
-        "category type-of-category",
-        "category singularity-of-relation",
-        "category complexity-of-relation",
-        "category mutability-of-relation"
+        "category::category",
+        "category::descriptive-category",
+        "category::referential-category",
+        "category::type-of-category",
+        "category::singularity-of-relation",
+        "category::complexity-of-relation",
+        "category::mutability-of-relation"
       ],
-      "predicate": "thing#be#instance#of#category referential-category"
+      "predicate": "thing be instance of category referential-category"
     },
     {
       "subjects": [

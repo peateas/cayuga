@@ -8,27 +8,29 @@
   "document": "reports",
   "location": "earth",
   "time": "2018",
-  "reports": "agent Patrick do report events here and now",
-  "events": "agent Patrick do cause occurrences here and now",
-  "occurrences": "relationships do occur time always location universe",
+  "reports": "agent Patrick do report events at time now at location here",
+  "events": "agent Patrick do cause occurrences at time now at location here",
+  "occurrences": "relationships do occur at time always at location universe",
   "relationships": [
     {
       "subject": "category category",
       "predicates": {
-        "type-type": "referential",
-        "mandatory_predicates": [
+        "type type-of-category": "referential",
+        "mandatory predicates": [
           "thing#be#instance#of#category thing"
         ],
-        "definitive-relations": [
-          "category#have#type#type"
+        "definitive relations": [
+          "category#have#type#type",
+          "category#have#definitive-relation",
+          "category#have#instance#thing"
         ]
       }
     },
     {
       "subject": "category descriptive-category",
       "predicates": {
-        "type type": "referential",
-        "mandatory#predicates": [
+        "type type-of-category": "referential",
+        "mandatory predicates": [
           "thing#be#instance#of#category category",
           "category#have#type#type descriptive"
         ],
@@ -40,8 +42,8 @@
     {
       "subject": "category referential-category",
       "predicates": {
-        "type type":  "referential",
-        "mandatory#predicates":  [
+        "type type-of-category": "referential",
+        "mandatory predicates": [
           "thing#be#category#category",
           "category#have#type#type#referential"
         ],
@@ -52,7 +54,7 @@
     {
       "subject": "category inclusion-category",
       "predicates": {
-        "type type": "descriptive",
+        "type type-of-category": "descriptive",
         "mandatory predicates": [
           "thing#be#category#category category",
           "category#have#type#type# inclusion"
@@ -69,7 +71,7 @@
       "subject": "category exclusion-category",
       "predicates": {
         "type type": "descriptive",
-        "mandatory predicates":  [
+        "mandatory predicates": [
           "thing#be#category#category category",
           "category#have#type#type exclusion"
         ],
@@ -85,14 +87,62 @@
     {
       "subject": "category restrictive-category",
       "predicates": {
-        "type type": "descriptive",
-        "mandatory predicates":  [
+        "type type-of-category": "descriptive",
+        "mandatory predicates": [
           "thing#be#category#category category",
           "category#have#type#type restrictive"
         ],
         "definitive relations": [
           "restrictive#category#have#mandatory#category"
         ]
+      }
+    },
+    {
+      "subject": "category relation",
+      "properties":  {
+        "type type-of-category":  "referential",
+        "mandatory properties":  [
+          "thing#be#instance#of#category#thing"
+        ],
+        "definitive relations": [
+          "relation#have#inverse#relation",
+          "relation#have#domain#category",
+          "relation#have#image#category",
+          "relation#have#singularity#singularity-of-relation",
+          "relation#have#completeness#completeness-of-relation",
+          "relation#have#co-domain#category",
+          "relation#have#co-image#category",
+          "relation#have#co-singularity#singularity-of-relation",
+          "relation#have#co-completeness#completeness-of-relation",
+          "relation#have#mutability#mutability-of-relation"
+        ]
+      }
+    },
+    {
+      "subject": "category type-of-category",
+      "predicates": {
+        "type type-of-category": "referential",
+        "mandatory predicates": [
+          "thing#be#instance#of#category"
+        ]
+      }
+    },
+    {
+      "subject": "category singularity-of-relation",
+      "predicates": {
+        "type type-of-category": "referential"
+      }
+    },
+    {
+      "subject": "category completeness-of-relation",
+      "predicates": {
+        "type type-of-category": "referential"
+      }
+    },
+    {
+      "subject": "category mutability-of-relation",
+      "predicates": {
+        "type type-of-category": "referential"
       }
     }
   ]

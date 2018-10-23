@@ -1,0 +1,77 @@
+REPORTS
+thing category::relation
+do be instance of category category at time always at location universe
+made by agent patrick at time 2018 at location earth
+said by source agent::patrick at time 2018 at location earth
+
+thing category::category
+do be instance of category category at time always at location universe
+made by agent patrick at time 2018 at location earth
+said by source agent::patrick at time 2018 at location earth
+
+thing category::thing
+do be instance of category category at time always at location universe
+made by agent patrick at time 2018 at location earth
+said by source agent::patrick at time 2018 at location earth
+
+OCCURRENCES
+category category do have instance thing category::relation at time always at location universe
+source agent::Patrick do have reported ##### at time 2018 at location earth
+agent Patrick do have made ##### at time 2018 at location earth
+category category do have instance thing category::category at time always at location universe
+source agent::Patrick do have reported ##### at time 2018 at location earth
+agent Patrick do have made ##### at time 2018 at location earth
+category category do have instance thing category::thing at time always at location universe
+source agent::Patrick do have reported ##### at time 2018 at location earth
+agent Patrick do have made ##### at time 2018 at location earth
+
+NAMES
+group::system::namespace
+group::system::category
+group::system::agent
+group::system::time
+group::system::location
+category::system::namespace
+category::system::relation
+category::system::category
+category::system::thing
+category::system::agent
+category::system::source
+namespace::system::system
+agent::system::patrick
+time::system::always
+location::system::earth
+location::system::universe
+
+TAGS (ENGLISH)
+group
+system
+namespace
+category
+agent
+time
+location
+relation
+thing
+source
+patrick
+always
+earth
+universe
+do
+be
+of
+by
+at
+
+RELATIONS
+category#have#instance#thing / thing#be#instance#of#category
+agent#have#made#state / state#be#made#by#agent
+source#have#said#action / action#be#reported#by#source
+
+SUGAR
+do
+be
+of
+by
+at

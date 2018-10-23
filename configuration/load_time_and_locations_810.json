@@ -1,0 +1,43 @@
+{
+  "system": "/us/cayuga/system/2018",
+  "namespace": "system",
+  "tag-language": "english",
+  "context": "system",
+  "document": "load",
+  "topics": [
+    "times",
+    "locations"
+  ],
+  "title": "times and locations",
+  "reports": [
+    {
+      "things": [
+        "time::powers-on-high-made",
+        "time::universe-made",
+        "time::earth-made",
+        "time::always"
+      ],
+      "relationship": [
+        "things said-to-be-made-to-be in universe universe",
+        "things said-to-be-made-to-be instance of category time"
+      ],
+      "state": "relationship do occur at time always at location universe",
+      "event": "state do be made to occur by agent powers-on-high at time powers-on-high-made at location powers-on-high-when-made",
+      "report": "event do be said to occur by agent patrick at time 2018 at location earth"
+    },
+    {
+      "things": [
+        "location powers-on-high-when-made",
+        "location universe",
+        "location earth"
+      ],
+      "relationship": [
+        "things said-to-be-made-to-be in universe universe",
+        "things said-to-be-made-to-be instance of category location"
+      ],
+      "state": "relationship do occur at time always at location universe",
+      "event": "state do be made to occur by agent powers-on-high at time powers-on-high-made at location powers-on-high-when-made",
+      "report": "event do be said to occur by agent patrick at time 2018 at location earth"
+    }
+  ]
+}

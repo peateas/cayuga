@@ -1,6 +1,7 @@
 {
   "tag-language": "english",
   "system": "/us/cayuga/system/2018",
+  "namespace":  "system",
   "context": "system",
   "topics":  ["category relation"],
   "document": "reports",
@@ -159,6 +160,16 @@
         "co-completeness#completeness": "partial",
         "mutability": "mutable"
       }
-    }
+    },
+    "thing#be#instance#of#category",
+    "thing#have#relationship#relationship",
+    "category#have#type#type-of-category",
+    "category#have#mandatory#predicate",
+    "category#have#definitive#relationship",
+    "descriptive-category#have#differentiator#relation",
+    "inclusion-category#have#inclusion#category",
+    "exclusion-category#have#domain#category",
+    "exclusion-category#have#exclusion#category",
+    "restrictive-category#have#restrictive#category"
   ]
 }
