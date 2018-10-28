@@ -2,6 +2,7 @@
   <dictionary name="patrick">
     <words>
       <w>differentiator</w>
+      <w>loggable</w>
     </words>
   </dictionary>
 </component>

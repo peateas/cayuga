@@ -14,7 +14,7 @@ duration = 0
 puts start
 set = Set.new
 array = []
-top = 2**24
+top = 2**10
 (0...top).each do |i|
   set << i
   # array[i] = i
