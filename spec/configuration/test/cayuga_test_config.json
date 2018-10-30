@@ -1,0 +1,13 @@
+{
+  "singletons": [
+    "Cayuga::Object::Logger",
+    "Cayuga::Object::Constants",
+    "Test2018::Singleton"
+  ],
+  "named_object_classes": [
+    "Test2018::NamedObjectClass"
+  ],
+  "directories": {
+    "logs": "spec/test/logs"
+  }
+}

@@ -1,8 +1,3 @@
-# top = $:.shift
-# $:.unshift File.expand_path('../../..', __dir__)
-# $:.unshift File.expand_path('.', __dir__)
-# $:.unshift top
-#
 require 'bundler/setup'
 require 'factory_information_helper'
 require 'tool_information_helper'

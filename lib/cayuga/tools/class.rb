@@ -18,6 +18,10 @@ module Cayuga
         self
       end
 
+      def filenamify(extension=nil)
+        stringify.filenamify(extension)
+      end
+
     end
   end
 end

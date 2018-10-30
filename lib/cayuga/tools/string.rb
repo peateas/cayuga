@@ -1,6 +1,10 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
+# noinspection RubyResolve
+require 'facets/string/pathize'
+
+require 'file-tail'
 
 module Cayuga
   module Tools
@@ -15,7 +19,17 @@ module Cayuga
       end
 
       def classify
-        Object.const_get(self)
+        symbolize.classify
+      end
+
+      def filenamify(extension = nil)
+        # noinspection RubyResolve
+        result = pathize.gsub('/', '#')
+        unless extension.nil? || extension.empty?
+          result += extension[0] == '.' ? '' : '.'
+          result += extension.stringify
+        end
+        result
       end
 
     end

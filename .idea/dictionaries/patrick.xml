@@ -1,8 +1,12 @@
 <component name="ProjectDictionaryState">
   <dictionary name="patrick">
     <words>
+      <w>appenders</w>
       <w>differentiator</w>
+      <w>filenamify</w>
       <w>loggable</w>
+      <w>memoist</w>
+      <w>pathize</w>
     </words>
   </dictionary>
 </component>

@@ -10,7 +10,7 @@ module Cayuga
   module Object
     # Cayuga Object Factory
     class Factory
-      attr_reader :configuration_information
+      attr_reader :configuration_information, :logs_directory
 
       def supported?(klass)
         types.key?(klass.symbolize)
@@ -74,6 +74,10 @@ module Cayuga
         end
       end
 
+       def directory_constants
+         @directories.freeze
+       end
+
       private
 
       attr_reader :configuration, :types, :instances
@@ -81,6 +85,7 @@ module Cayuga
       def initialize(config)
         @configuration_information = config
         @configuration = JSON.parse(File.read(config), symbolize_names: true)
+        @logs_directory = configuration[:directories][:logs]
         @types = {}
         # register_classes(FACTORIES, :factory)
         register_classes(configuration[:singletons], :singleton)
@@ -89,6 +94,7 @@ module Cayuga
           configuration[:named_object_classes], :named
         )
         @instances = {}
+        @directories = configuration[:directories].freeze
       end
 
       def register_classes(list, type)

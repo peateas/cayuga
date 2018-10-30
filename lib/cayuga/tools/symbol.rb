@@ -15,7 +15,13 @@ module Cayuga
       end
 
       def classify
-        Object.const_get(self.to_s)
+        klass = Object.const_get(self.to_s)
+        raise(NameError,"wrong class name '#{klass}'") unless klass.kind_of?(Class)
+        klass
+      end
+
+      def filenamify(extension=nil)
+        stringify.filenamify(extension)
       end
 
     end
