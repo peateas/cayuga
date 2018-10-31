@@ -10,8 +10,15 @@ require 'cayuga/tools/loggable'
 module Cayuga
   module Object
     module Object
-      def log_file
-        @log_file ||= "#{factory.logs_directory}/#{self.class.filenamify('.log')}"
+      def self.included(base)
+        Tools::Loggable.included(base)
+
+        base.class_eval do
+          def log_file
+            @log_file ||= "#{factory.logs_directory}/#{self.class.filenamify('.log')}"
+          end
+        end
+
       end
 
     end

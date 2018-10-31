@@ -5,7 +5,7 @@
     "Test2018::Singleton"
   ],
   "named_object_classes": [
-    "Test2018::NamedObjectClass"
+    "Test2018::NamedObject"
   ],
   "directories": {
     "logs": "spec/test/logs"

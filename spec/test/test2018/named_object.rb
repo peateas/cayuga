@@ -2,12 +2,11 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'cayuga/object/object'
-require 'cayuga/object/singleton'
+require 'cayuga/object/named_object'
 
 module Test2018
-  class Singleton
-    extend Cayuga::Object::Singleton
-    include Cayuga::Object::Object
+  class NamedObject
+    include Cayuga::Object::NamedObject
 
     private_class_method :new
 
@@ -15,7 +14,7 @@ module Test2018
 
     attr_reader :factory
 
-    def initialize(factory)
+    def initialize(factory, name)
       @factory = factory
     end
 

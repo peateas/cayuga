@@ -2,8 +2,8 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'cayuga/object/factory'
-require 'test2018/singleton'
-require 'test2018/named_object_class'
+require 'test/test2018/singleton'
+require 'test/test2018/named_object'
 
 RSpec.describe Cayuga::Object::Factory do
   subject { factory }
@@ -24,8 +24,8 @@ RSpec.describe Cayuga::Object::Factory do
   end
 
   it 'should have registered named objects' do
-    expect(factory).to be_supported Test2018::NamedObjectClass
-    expect(factory.type(Test2018::NamedObjectClass))
+    expect(factory).to be_supported Test2018::NamedObject
+    expect(factory.type(Test2018::NamedObject))
       .to be == :named
   end
 
@@ -35,8 +35,8 @@ RSpec.describe Cayuga::Object::Factory do
   end
 
   it 'should provide a named instance of a named object class' do
-    expect(subject[Test2018::NamedObjectClass, :one]).to be_instance_of Test2018::NamedObjectClass
-    expect(subject).to be_registered(Test2018::NamedObjectClass, :one)
+    expect(subject[Test2018::NamedObject, :one]).to be_instance_of Test2018::NamedObject
+    expect(subject).to be_registered(Test2018::NamedObject, :one)
   end
 
   it 'should be able to release the singleton instance' do
@@ -46,8 +46,8 @@ RSpec.describe Cayuga::Object::Factory do
   end
 
   it 'should be able to release a named object' do
-    expect(subject[Test2018::NamedObjectClass, :one]).to be_instance_of Test2018::NamedObjectClass
-    subject.release(Test2018::NamedObjectClass, :one)
+    expect(subject[Test2018::NamedObject, :one]).to be_instance_of Test2018::NamedObject
+    subject.release(Test2018::NamedObject, :one)
     expect(subject).not_to be_registered(Test2018::Singleton)
   end
 

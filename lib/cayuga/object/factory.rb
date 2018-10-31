@@ -5,11 +5,14 @@ require 'json'
 require 'cayuga/tools/string'
 require 'cayuga/tools/symbol'
 require 'cayuga/tools/class'
+require 'cayuga/object/object'
 
 module Cayuga
   module Object
     # Cayuga Object Factory
     class Factory
+      include Object
+
       attr_reader :configuration_information, :logs_directory
 
       def supported?(klass)

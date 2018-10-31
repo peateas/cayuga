@@ -5,7 +5,7 @@
 require 'cayuga/object/factory'
 
 module FactoryInformationHelper
-  CONFIGURATION_INFORMATION = 'spec/configuration/test/cayuga_test_config.json'.freeze
+  CONFIGURATION_INFORMATION = 'spec/test/configuration/cayuga_test_config.json'.freeze
   FACTORY = Cayuga::Object::Factory.new CONFIGURATION_INFORMATION
 
   def factory

@@ -8,9 +8,7 @@ require 'cayuga/object/singleton'
 module Cayuga
   module Object
     class Constants
-      extend Singleton
-      include Object
-      include Tools::Loggable
+      include Singleton
 
       def directory(constant)
         directories[constant.symbolize]
@@ -24,7 +22,7 @@ module Cayuga
 
       def initialize(factory)
         @factory = factory
-        factory[Logger].log_log!(self.class, filename: log_file, filter: Regexp.new("#{self.class.stringify}"))
+        factory[Cayuga::Object::Logger].log_log!(self.class, filename: log_file, filter: Regexp.new("#{self.class.stringify}"))
 
         @directories = factory.directory_constants
       end

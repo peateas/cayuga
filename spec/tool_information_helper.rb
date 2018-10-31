@@ -1,8 +1,8 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'test2018/singleton'
-require 'test2018/named_object_class'
+require 'test/test2018/singleton'
+require 'test/test2018/named_object'
 
 module ToolInformationHelper
   STRING_SYMBOL_CLASS_EXAMPLES = [{
@@ -11,10 +11,10 @@ module ToolInformationHelper
     class: Test2018::Singleton,
     filename: 'test2018#singleton'
   }, {
-    string: 'Test2018::NamedObjectClass',
-    symbol: :'Test2018::NamedObjectClass',
-    class: Test2018::NamedObjectClass,
-    filename:  'test2018#named_object_class'
+    string: 'Test2018::NamedObject',
+    symbol: :'Test2018::NamedObject',
+    class: Test2018::NamedObject,
+    filename:  'test2018#named_object'
   }].freeze
 
   NON_CLASS_STRINGS = %W/!@#$% ToolInformationHelper::NON_CLASS_STRINGS/

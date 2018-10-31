@@ -4,14 +4,11 @@
 require 'file-tail'
 require 'cayuga/object/constants'
 require 'cayuga/object/singleton'
-require 'cayuga/tools/loggable'
 
 module Cayuga
   module Object
     class Logger
-      extend Singleton
-      include Object
-      include Tools::Loggable
+      include Singleton
 
       def generic_log_file(name)
         "#{factory.logs_directory}/#{name.stringify.filenamify('.log')}"
