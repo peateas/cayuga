@@ -28,12 +28,19 @@ module Cayuga
 
       def log_log!(name, filename: nil, stream: nil, filter: nil)
         return log_log(name) if log_log?(name)
-        log = nil
-        log = SemanticLogger.add_appender(file_name: filename, filter: filter) unless filename.nil?
-        log = SemanticLogger.add_appender(io: stream, filter: filter) unless stream.nil?
-        raise ArgumentError, "no filename or stream for log #{name.stringify}" if log.nil?
+        if filename.nil?
+          if stream.nil?
+            #must be a class
+              filename = factory.logs_directory + '/' + name.classify.log_file
+              log = SemanticLogger.add_appender(file_name: filename, filter: filter)
+          else
+            log = SemanticLogger.add_appender(io: stream, filter: filter)
+          end
+        else
+          log = SemanticLogger.add_appender(file_name: filename, filter: filter)
+        end
         log.name = name.stringify
-        @logs[name.symbolize] = filename || stream
+        @logs[name.symbolize] = filename || stream || name.stringify
       end
 
       def tail(name, size: 5)
@@ -55,7 +62,7 @@ module Cayuga
         @logs = {}
         log_log!(:console, stream: $stderr)
         log_log!(:main, filename: generic_log_file(:main))
-        log_log!(self.class, filename: log_file, filter: Regexp.new(self.class.stringify))
+        log_log!(self.class, filter: Regexp.new(self.class.stringify))
       end
 
     end

@@ -20,6 +20,7 @@ module Cayuga
       end
 
       def self.create(factory, configuration, name)
+        raise "#{self.stringify}[#{name}] already registered" if factory.registered?(self, name)
         if primary?(name)
           primary = name
           alternate = nil
@@ -56,6 +57,7 @@ module Cayuga
         # alternate valid
         true
       end
+
       private_class_method :verify_name_validity
 
       def self.create_primary(factory, configuration, name)
@@ -67,6 +69,7 @@ module Cayuga
         end
         instance
       end
+
       private_class_method :create_primary
 
     end

@@ -19,7 +19,6 @@ module Cayuga
 
       def initialize(factory, configuration)
         super
-        factory[Cayuga::Object::Logger].log_log!(self.class, filename: log_file, filter: Regexp.new("#{self.class.stringify}"))
         @directories = configuration[:directories]
       end
 

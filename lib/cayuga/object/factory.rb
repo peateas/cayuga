@@ -10,7 +10,7 @@ module Cayuga
     class Factory
       include Tools::Loggable
 
-      attr_reader :configuration_information, :logs_directory
+      attr_reader :configuration_name, :logs_directory
 
       def supported?(klass)
         types.key?(klass.symbolize)
@@ -83,8 +83,8 @@ module Cayuga
       attr_reader :configuration, :types, :instances
 
       def initialize(config)
-        @configuration_information = config
         @configuration = JSON.parse(File.read(config), symbolize_names: true)
+        @configuration_name = configuration[:configuration_name]
         @logs_directory = configuration[:directories][:logs]
         @types = {}
         # register_classes(FACTORIES, :factory)
@@ -95,6 +95,7 @@ module Cayuga
         )
         @instances = {}
         @directories = configuration[:directories].freeze
+        self[Logger].log_log!(self.class, filter: Regexp.new(self.class.stringify))
       end
 
       def register_classes(list, type)

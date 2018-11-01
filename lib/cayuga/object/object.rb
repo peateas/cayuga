@@ -23,7 +23,11 @@ module Cayuga
       def initialize(factory, configuration)
         @factory = factory
         @configuration = configuration
-        @configuration_name = configuration[:configuration_name]
+        @configuration_name = factory.configuration_name
+        factory[Logger].log_log!(
+          self.class,
+          filter: Regexp.new(self.class.stringify)
+        ) unless self.class == Logger
       end
 
     end

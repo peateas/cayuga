@@ -50,4 +50,6 @@ RSpec.describe Cayuga::Object::Factory do
     expect(subject).not_to be_registered(Test2018::Singleton)
   end
 
+
+
 end
