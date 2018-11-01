@@ -1,8 +1,7 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'cayuga/tools/loggable'
-require 'semantic_logger'
+require 'cayuga'
 
 module Test2018
   class LoggingTest
@@ -12,7 +11,6 @@ module Test2018
       log.info('info')
       log.debug('debug')
     end
-
 
   end
 end

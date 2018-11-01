@@ -1,7 +1,6 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'cayuga/object/factory'
 require 'test/test2018/singleton'
 require 'test/test2018/named_object'
 

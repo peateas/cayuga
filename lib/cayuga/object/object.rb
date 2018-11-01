@@ -2,23 +2,31 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 #
-# require 'cayuga/tools/string'
-# require 'cayuga/tools/symbol'
-# require 'cayuga/tools/class'
-require 'cayuga/tools/loggable'
+require 'cayuga'
 
 module Cayuga
   # noinspection RubyConstantNamingConvention
   RootObject = Object
 
   module Object
-    module Object
-      def self.included(base)
-        Tools::Loggable.included(base)
-        base.class_eval do
-        end
+    class Object
+      include Tools::Loggable
+
+      attr_reader :configuration_name
+
+      private_class_method :new
+
+      private
+
+      attr_reader :factory, :configuration
+
+      def initialize(factory, configuration)
+        @factory = factory
+        @configuration = configuration
+        @configuration_name = configuration[:configuration_name]
       end
+
     end
   end
-
 end
+

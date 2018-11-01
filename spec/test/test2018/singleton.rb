@@ -1,22 +1,9 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'cayuga/object/object'
-require 'cayuga/object/singleton'
+require 'cayuga'
 
 module Test2018
-  class Singleton
-    include Cayuga::Object::Singleton
-
-    private_class_method :new
-
-    private
-
-    attr_reader :factory
-
-    def initialize(factory)
-      @factory = factory
-    end
-
+  class Singleton < Cayuga::Object::Singleton
   end
 end

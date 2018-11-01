@@ -4,15 +4,10 @@
 module Cayuga
   module Object
     # Cayuga Object Singleton
-    module Singleton
-      def self.included(base)
-        Object.included(base)
-        base.class_eval do
-          def self.create(factory)
-            raise "#{self.stringify} already registered" if factory.registered?(self)
-            factory.register(new(factory), self)
-          end
-        end
+    class Singleton < Object
+      def self.create(factory, configuration)
+        raise "#{self.stringify} already registered" if factory.registered?(self)
+        factory.register(new(factory, configuration), self)
       end
     end
   end

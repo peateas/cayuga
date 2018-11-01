@@ -2,7 +2,7 @@
 # Copyright ©2016-2018 Patrick Thomas. All rights reserved.
 #
 
-require 'cayuga/object/factory'
+require 'cayuga'
 
 module FactoryInformationHelper
   CONFIGURATION_INFORMATION = 'spec/test/configuration/cayuga_test_config.json'.freeze

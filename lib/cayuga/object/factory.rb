@@ -2,16 +2,13 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'json'
-require 'cayuga/tools/string'
-require 'cayuga/tools/symbol'
-require 'cayuga/tools/class'
-require 'cayuga/object/object'
+require 'cayuga'
 
 module Cayuga
   module Object
     # Cayuga Object Factory
     class Factory
-      include Object
+      include Tools::Loggable
 
       attr_reader :configuration_information, :logs_directory
 
@@ -123,10 +120,10 @@ module Cayuga
           #     log.info("factory #{klass} created ")
           #   end
           when :singleton
-            object = klass.create(self)
+            object = klass.create(self, configuration)
             # log.info("singleton #{klass} created ")
           when :named
-            object = klass.create(self, name)
+            object = klass.create(self, configuration, name)
             # log.info("#{klass} created with name #{name}")
           else
             raise "unregistered or incorrectly registered class #{klass}"

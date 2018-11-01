@@ -1,6 +1,8 @@
 require 'bundler/setup'
+require 'cayuga'
 require 'factory_information_helper'
 require 'tool_information_helper'
+
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

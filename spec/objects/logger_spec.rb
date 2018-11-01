@@ -1,7 +1,6 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'cayuga/object/logger'
 require 'test/test2018/logging_test'
 
 RSpec.describe Cayuga::Object::Logger do

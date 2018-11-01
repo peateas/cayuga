@@ -2,13 +2,11 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'file-tail'
-require 'cayuga/object/constants'
-require 'cayuga/object/singleton'
+require 'cayuga'
 
 module Cayuga
   module Object
-    class Logger
-      include Singleton
+    class Logger < Singleton
 
       def generic_log_file(name)
         "#{factory.logs_directory}/#{name.stringify.filenamify('.log')}"
@@ -52,7 +50,7 @@ module Cayuga
 
       attr_reader :factory
 
-      def initialize(factory)
+      def initialize(factory, configuration)
         @factory = factory
         @logs = {}
         log_log!(:console, stream: $stderr)

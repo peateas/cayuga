@@ -1,8 +1,6 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'cayuga/tools/symbol'
-
 RSpec.describe Cayuga::Tools::Symbol, for_tools: true do
 
   it 'produces string, symbol and class versions of itself' do
