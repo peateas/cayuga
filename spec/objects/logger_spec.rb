@@ -50,6 +50,7 @@ RSpec.describe Cayuga::Object::Logger do
     verify_log_log(target)
     instance = target.new
     instance.make_logs
+    SemanticLogger.flush
     records = subject.tail(target)
     expect(records.size).to be > 0
   end

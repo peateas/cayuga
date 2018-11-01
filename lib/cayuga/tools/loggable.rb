@@ -13,7 +13,13 @@ module Cayuga
           class << self
             alias_method :log, :logger
           end
+
           alias_method :log, :logger
+
+          def log_file
+            @log_file ||= "#{factory.logs_directory}/#{self.class.filenamify('.log')}"
+          end
+
         end
       end
     end

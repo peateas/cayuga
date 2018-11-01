@@ -4,6 +4,7 @@
 require 'cayuga/tools/loggable'
 require 'cayuga/object/object'
 require 'cayuga/object/singleton'
+require 'cayuga/object/logger'
 
 module Cayuga
   module Object
