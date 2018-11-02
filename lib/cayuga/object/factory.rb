@@ -74,9 +74,9 @@ module Cayuga
         end
       end
 
-       def directory_constants
-         @directories.freeze
-       end
+      def directory_constants
+        @directories.freeze
+      end
 
       private
 
@@ -95,7 +95,6 @@ module Cayuga
         )
         @instances = {}
         @directories = configuration[:directories].freeze
-        self[Logger].log_log!(self.class, filter: Regexp.new(self.class.stringify))
       end
 
       def register_classes(list, type)
@@ -122,10 +121,10 @@ module Cayuga
           #   end
           when :singleton
             object = klass.create(self, configuration)
-            # log.info("singleton #{klass} created ")
+          # log.info("singleton #{klass} created ")
           when :named
             object = klass.create(self, configuration, name)
-            # log.info("#{klass} created with name #{name}")
+          # log.info("#{klass} created with name #{name}")
           else
             raise "unregistered or incorrectly registered class #{klass}"
         end
@@ -133,5 +132,6 @@ module Cayuga
       end
 
     end
+
   end
 end

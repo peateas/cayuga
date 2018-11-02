@@ -3,7 +3,7 @@
 #
 require 'test/test2018/logging_test'
 
-RSpec.describe 'loggable objects'  do
+RSpec.describe 'loggable objects' do
   subject { Test2018::LoggingTest }
   let(:logger) { factory[Cayuga::Object::Logger] }
   it 'should have loggers' do
@@ -16,41 +16,17 @@ RSpec.describe 'loggable objects'  do
   end
 
   it 'should be able to change log levels' do
-    expect { subject.log.level = :info; subject.log.level = :debug }.to change(subject.log, :level)
+    verify_log_log(subject)
+    [subject.log, logger.log_appender(subject)].each do |entity|
+      expect { entity.level = :info; entity.level = :debug }.to change(entity, :level)
+    end
   end
 
   it 'should log information at different levels' do
     verify_log_log(subject)
     instance = subject.new
-    check_logs(subject,:info, 1) { instance.make_logs }
-    check_logs(subject,:debug, 2) { instance.make_logs }
-  end
-
-  def verify_log_log(name)
-    logger.log_log!(
-      name,
-      filename: logger.generic_log_file(name),
-      filter: Regexp.new(name.stringify)
-    ) unless logger.log_log?(name)
-  end
-
-  def check_logs(target, level, count, &block)
-    target.log.level = level
-    logs = get_logs(subject, &block)
-    expect(logs.size).to be == count
-  end
-
-  def get_logs(target)
-    records = nil
-    thread = Thread.new do
-      thread_info = "#{Process.pid}:#{Thread.current.name}"
-      filter = Regexp.new(thread_info)
-      yield
-      SemanticLogger.flush
-      records = logger.tail(target).select { |record| record =~ filter }
-    end
-    thread.join
-    records
+    check_logs(subject, :info, 1) { instance.make_logs }
+    check_logs(subject, :debug, 2) { instance.make_logs }
   end
 
 end

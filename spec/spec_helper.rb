@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'cayuga'
 require 'factory_information_helper'
+require 'logger_information_helper'
 require 'tool_information_helper'
 
 
@@ -15,7 +16,13 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 
+  config.before(:suite) do
+    CONFIGURATION_INFORMATION = 'spec/test/configuration/cayuga_test_config.json'.freeze
+    FACTORY =  Cayuga::Object::Factory.new CONFIGURATION_INFORMATION
+  end
+
   config.include FactoryInformationHelper
+  config.include LoggerInformationHelper
   # noinspection RubyResolve
   config.include ToolInformationHelper, for_tools: true
 

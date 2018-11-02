@@ -16,7 +16,7 @@ RSpec.describe 'cayuga object' do
   it 'should have its own log file' do
     subject.each do |target|
       # noinspection RubyResolve
-      expect(logger.logs).to include target.class.symbolize
+      expect(logger.log_names).to include target.class.symbolize
     end
   end
 
@@ -41,8 +41,13 @@ RSpec.describe 'cayuga object' do
     end
   end
 
-  it 'should log when they get created'
-
-  it 'should log when they get released'
+  it 'should log when they get created and released' do
+    log = logger[:main]
+    objects = subject - [factory, logger]
+    objects.each do |target|
+    end
+    pending 'more work to do'
+    raise 'finish implementing'
+  end
 
 end

@@ -23,12 +23,12 @@ RSpec.describe Cayuga::Object::Logger do
 
   it 'should have primary logs' do
     # noinspection RubyResolve
-    expect(subject.logs).to include(*logs)
+    expect(subject.log_names).to include(*logs)
   end
 
   it 'should have its own log' do
     # noinspection RubyResolve
-    expect(subject.logs).to include subject.class.symbolize
+    expect(subject.log_names).to include subject.class.symbolize
   end
 
   it 'should have a file for its log' do
