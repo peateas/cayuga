@@ -3,7 +3,7 @@ require 'cayuga'
 require 'factory_information_helper'
 require 'logger_information_helper'
 require 'tool_information_helper'
-
+require 'tally_information_helper'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -25,6 +25,8 @@ RSpec.configure do |config|
   config.include LoggerInformationHelper
   # noinspection RubyResolve
   config.include ToolInformationHelper, for_tools: true
+  # noinspection RubyResolve
+  config.include TallyInformationHelper, for_tallies: true
 
 end
 
