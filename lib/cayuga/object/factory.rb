@@ -2,6 +2,7 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'json'
+require 'ice_nine'
 require 'ice_nine/core_ext/object'
 require 'cayuga'
 
