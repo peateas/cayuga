@@ -4,8 +4,6 @@
 # noinspection RubyResolve
 require 'facets/string/pathize'
 
-require 'file-tail'
-
 module Cayuga
   module Tools
     # Cayuga Tools String

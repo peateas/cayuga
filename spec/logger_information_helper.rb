@@ -1,6 +1,7 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
+require 'file-tail'
 
 module LoggerInformationHelper
   def verify_log_log(name)
