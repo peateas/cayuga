@@ -34,17 +34,20 @@ module Cayuga
       end
 
       def tally_factor
-        raise ArgumentError, "#{self} is not a direct tally" unless tally_direct_name?
+        raise ArgumentError, "#{self} is an indirect tally name with no direct values" if tally_indirect_name?
+        raise ArgumentError, "#{self} is a meta tally name with no values" if tally_meta_name?
         0
       end
 
       def tally_major_value
-        raise ArgumentError, "#{self} is not a direct tally" unless tally_direct_name?
+        raise ArgumentError, "#{self} is an indirect tally name with no direct values" if tally_indirect_name?
+        raise ArgumentError, "#{self} is a meta tally name with no values" if tally_meta_name?
         self / 2 ** 16
       end
 
       def tally_minor_value
-        raise ArgumentError, "#{self} is not a direct tally" unless tally_direct_name?
+        raise ArgumentError, "#{self} is an indirect tally name with no direct values" if tally_indirect_name?
+        raise ArgumentError, "#{self} is a meta tally name with no values" if tally_meta_name?
         self % 2 ** 16
       end
 

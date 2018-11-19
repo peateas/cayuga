@@ -1,19 +1,37 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-RSpec.describe Cayuga::Tools::Integer, for_tallies: true do
-  specify 'tally names must be valid' do
+RSpec.describe 'tally names', for_tallies: true do
+  subject { factory[klass, name] }
+  let(:klass) { Cayuga::Tally::Repository }
+  let(:constants) { factory[Cayuga::Object::Constants]}
+  let(:name) {constants.repository(:test_tallies)}
+
+  specify 'they must be valid' do
     examples.each do |example|
       name = example[:name]
-      if example[:type].nil?
-        expect(name).not_to be_tally_name
+      type = example[:type]
+      if type.nil?
+        expect(subject).not_to be_name(name)
       else
-        expect(example[:name]).to be_tally_name
+        expect(subject).to be_name(name)
       end
     end
   end
 
-  specify 'tally_names are names for direct or meta tallies or are indirect tally names' do
+  specify 'they are direct or meta tallies or indirect name' do
+    examples.each do |example|
+      name = example[:name]
+      type = example[:type]
+      if type.nil?
+        expect(subject).not_to be_name(name)
+      else
+        expect(subject).to be_name(name)
+      end
+    end
+  end
+
+  specify 'they are tallies or not' do
     examples.each do |example|
       name = example[:name]
       type = example[:type]
@@ -46,12 +64,15 @@ RSpec.describe Cayuga::Tools::Integer, for_tallies: true do
     end
   end
 
-  specify 'direct tally names have factors, major values and minor values' do
+  specify 'they have factors, major values and minor values' do
     examples.each do |example|
       name = example[:name]
       type = example[:type]
       case type
-        when :direct
+        when :indirect
+          subject.log.warn 'indirect tally factor, major and minor values',
+            payload = { value: name.to_s(16) } if type == :indirect
+        when :direct #, :indirect
           [:factor, :major, :minor].each do |key|
             message = case key
               when :factor
@@ -64,7 +85,7 @@ RSpec.describe Cayuga::Tools::Integer, for_tallies: true do
             expect(got).to be == expected,
               "#{name} expected #{key} #{expected} got #{got}"
           end
-        when :meta, :indirect
+        when :meta
           expect { name.tally_factor }.to raise_exception(ArgumentError, /tally name with no/)
           expect { name.tally_major_value }.to raise_exception(ArgumentError, /tally name with no/)
           expect { name.tally_minor_value }.to raise_exception(ArgumentError, /tally name with no/)

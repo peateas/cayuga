@@ -39,7 +39,7 @@ module Cayuga
       def initialize(factory, configuration, name)
         super(factory, configuration)
         @name = name
-        # Todo:  alternative names
+        # TO DO: alternative names
       end
 
       def self.verify_name_validity(factory, name, alternate)

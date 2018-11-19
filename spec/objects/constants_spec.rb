@@ -3,8 +3,20 @@
 #
 RSpec.describe Cayuga::Object::Constants do
   subject { factory[Cayuga::Object::Constants] }
-  it 'should have directory location for logs' do
-    expect(subject.directory(:logs)).not_to be_empty
+  it 'should have constants' do
+    expect(subject[:test_constant]).to be == 'test_constant'
+  end
+
+  it 'should have directories' do
+    expect(subject.directory(:test_directory)).to be == 'test_directory'
+  end
+
+  it 'should have files' do
+    expect(subject.file(:test_file)).to be == 'test_file'
+  end
+
+  it 'should have repositories' do
+    expect(subject.repository(:test_repository)).to be == 'test_repository'
   end
 
 end

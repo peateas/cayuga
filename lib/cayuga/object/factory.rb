@@ -2,6 +2,7 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'json'
+require 'ice_nine/core_ext/object'
 require 'cayuga'
 
 module Cayuga
@@ -83,13 +84,12 @@ module Cayuga
       attr_reader :configuration, :types, :instances
 
       def initialize(config)
-        @configuration = JSON.parse(File.read(config), symbolize_names: true)
+        @configuration = JSON.parse(File.read(config), symbolize_names: true).deep_freeze
         @configuration_name = configuration[:configuration_name]
         @logs_directory = configuration[:directories][:logs]
         @types = {}
-        # register_classes(FACTORIES, :factory)
-        register_classes(configuration[:singletons], :singleton)
-        # register_classes(INDEXED_CLASSES, :indexed)
+        register_classes(configuration[:object_classes],:object)
+        register_classes(configuration[:singleton_classes], :singleton)
         register_classes(
           configuration[:named_object_classes], :named
         )
@@ -119,7 +119,7 @@ module Cayuga
           #   unless klass == LoggerFactory
           #     log.info("factory #{klass} created ")
           #   end
-          when :singleton
+          when :object, :singleton
             object = klass.create(self, configuration)
           # log.info("singleton #{klass} created ")
           when :named

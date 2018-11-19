@@ -9,6 +9,7 @@ module Cayuga
         raise "#{self.stringify} already registered" if factory.registered?(self)
         factory.register(new(factory, configuration), self)
       end
+
     end
   end
 end

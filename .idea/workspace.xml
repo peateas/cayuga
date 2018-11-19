@@ -3,30 +3,68 @@
   <component name="AnalysisUIOptions">
     <option name="FILTER_RESOLVED_ITEMS" value="false" />
   </component>
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="RSpecRunConfigurationType" name="All specs in tally: cayuga" />
+    </enabled-run-configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="refactor logging into loggable objects, logger and cayuga objects + added logger configuration pending examples">
-      <change afterPath="$PROJECT_DIR$/spec/logger_information_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cayuga.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cayuga.iml" afterDir="false" />
+    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="just before decision to have context manager and context in cayuga/module">
+      <change afterPath="$PROJECT_DIR$/lib/cayuga/tally.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/cayuga/tally/name_tracker.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/cayuga/tally/repository.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/cayuga/tally/representation.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/tally/name_tracker_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/tally/representation_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/tally/respository_infrastructure_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/tally/respository_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/tally/tally_names_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/test/configuration/test_tallies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/test/test2018/object.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cayuga.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/cayuga.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/constants.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/constants.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/logger.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/logger.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/version.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factory_information_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factory_information_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/logger_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/logger_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/object.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/singleton.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/singleton.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/integer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/tools/integer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/objects/constants_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/constants_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/objects/factory_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/factory_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/tally_information_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tally_information_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/configuration/cayuga_test_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/configuration/cayuga_test_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/tools/integer_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/integer_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" afterDir="false" />
     </list>
-    <list id="1da64f63-0574-4053-ad4b-06df3dfca8ec" name=".idea" comment="" />
+    <list id="1da64f63-0574-4053-ad4b-06df3dfca8ec" name=".idea" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/patrick.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/patrick.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cayuga.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cayuga.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="Gemfile.lock" />
     <ignored mask="*.log" />
     <ignored mask="*.gem" />
+    <ignored path="out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1964959214">
@@ -83,74 +121,83 @@
     <session id="460513173">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.29" value="2" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Ruby Console" value="84" />
           <entry key="dummy" value="4" />
-          <entry key="gemspec" value="146" />
-          <entry key="json" value="6019" />
+          <entry key="gemspec" value="174" />
+          <entry key="java" value="7" />
+          <entry key="json" value="7855" />
           <entry key="log" value="3" />
-          <entry key="rb" value="34833" />
+          <entry key="rb" value="51204" />
           <entry key="rspec" value="18" />
-          <entry key="txt" value="1940" />
+          <entry key="txt" value="2153" />
           <entry key="yml" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="6019" />
+          <entry key="JAVA" value="7" />
+          <entry key="JSON" value="7855" />
           <entry key="Log" value="3" />
-          <entry key="PLAIN_TEXT" value="1962" />
-          <entry key="Ruby" value="35063" />
+          <entry key="PLAIN_TEXT" value="2175" />
+          <entry key="RegExp" value="2" />
+          <entry key="Ruby" value="51460" />
           <entry key="YAML" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Gemfile" value="4" />
-          <entry key="LICENSE" value="3" />
+          <entry key="LICENSE" value="4" />
           <entry key="Rakefile" value="1" />
-          <entry key="gemspec" value="8" />
-          <entry key="gitignore" value="10" />
+          <entry key="gemspec" value="11" />
+          <entry key="gitignore" value="11" />
           <entry key="iml" value="3" />
-          <entry key="json" value="45" />
+          <entry key="java" value="1" />
+          <entry key="json" value="51" />
           <entry key="lock" value="1" />
           <entry key="log" value="56" />
           <entry key="md" value="7" />
           <entry key="rakeTasks" value="1" />
-          <entry key="rb" value="525" />
-          <entry key="rspec" value="6" />
+          <entry key="rb" value="673" />
+          <entry key="rspec" value="7" />
           <entry key="rspec_status" value="4" />
           <entry key="rtail" value="1" />
+          <entry key="setup" value="1" />
           <entry key="sgf" value="1" />
           <entry key="txt" value="1" />
-          <entry key="yml" value="12" />
+          <entry key="yml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JSON" value="45" />
+          <entry key="JAVA" value="1" />
+          <entry key="JSON" value="51" />
           <entry key="Log" value="56" />
           <entry key="Markdown" value="7" />
-          <entry key="PLAIN_TEXT" value="27" />
-          <entry key="Ruby" value="539" />
-          <entry key="YAML" value="12" />
+          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Ruby" value="690" />
+          <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -158,87 +205,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/cayuga/object/logger.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/objects/logger_spec.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/logger_information_helper.rb">
+        <entry file="file://$PROJECT_DIR$/lib/cayuga/tally/representation.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/tools/loggable_object_spec.rb">
+        <entry file="file://$PROJECT_DIR$/lib/cayuga/tally/repository.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/change.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="374" selection-start-line="374" selection-end-line="374" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/memoized_helpers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="83">
-              <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/cayuga/object/named_object.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="235">
+              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/cayuga/version.rb">
+        <entry file="file://$PROJECT_DIR$/spec/tally_information_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/test/test2018/logging_test.rb">
+        <entry file="file://$PROJECT_DIR$/spec/factory_information_helper.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/tally/name_tracker_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="140">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/tool_information_helper.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/loggable.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/cayuga.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cayuga.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="39" selection-start-line="38" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -250,8 +276,9 @@
       <list>
         <option value="Cayuga  Singleton" />
         <option value="Ruby Module Template" />
-        <option value="RSpec Test Template" />
+        <option value="Class" />
         <option value="Ruby Class Template" />
+        <option value="RSpec Test Template" />
       </list>
     </option>
   </component>
@@ -262,7 +289,6 @@
       <find>loggerTest</find>
       <find>Test2018::LoggingTest</find>
       <find>memo</find>
-      <find>ini</find>
       <find>tail</find>
       <find>Cayuga::Object</find>
       <find>add_appender</find>
@@ -273,6 +299,8 @@
       <find>.warn</find>
       <find>warn</find>
       <find>log_exists?</find>
+      <find>ini</find>
+      <find>one</find>
     </findStrings>
     <replaceStrings>
       <replace>#</replace>
@@ -287,57 +315,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.rubocop.yml" />
-        <option value="$PROJECT_DIR$/lib/cayuga/object/named_object_class.rb" />
-        <option value="$PROJECT_DIR$/spec/configuration/cayuga_test_config.json" />
-        <option value="$PROJECT_DIR$/data.json" />
-        <option value="$PROJECT_DIR$/spec/test2018/logging_test_class.rb" />
-        <option value="$PROJECT_DIR$/development.log" />
-        <option value="$PROJECT_DIR$/spec/factory_directory_constants_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/constants_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/tools/class.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/tools/symbol.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/tools/string.rb" />
-        <option value="$PROJECT_DIR$/spec/test2018/named_object_class.rb" />
-        <option value="$PROJECT_DIR$/spec/test2018/singleton.rb" />
-        <option value="$PROJECT_DIR$/spec/test2018/logging_test.rb" />
-        <option value="$PROJECT_DIR$/test_script.rb" />
-        <option value="$PROJECT_DIR$/spec/test2018/named_object.rb" />
-        <option value="$PROJECT_DIR$/spec/configuration/test/cayuga_test_config.json" />
-        <option value="$PROJECT_DIR$/spec/tool_information_helper.rb" />
-        <option value="$PROJECT_DIR$/out/test/cayuga/factory_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/factory_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/logger_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/module_object_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/test/configuration/cayuga_test_config.json" />
-        <option value="$PROJECT_DIR$/spec/test/test2018/named_object.rb" />
-        <option value="$PROJECT_DIR$/spec/test/test2018/singleton.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/object_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/constants_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/tools/class_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/tools/string_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/tools/symbol_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/factory_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/loggable_object_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/logging_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects.rb" />
-        <option value="$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb" />
         <option value="$PROJECT_DIR$/lib/cayuga/tools/loggable.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/object/constants.rb" />
-        <option value="$PROJECT_DIR$/cayuga.gemspec" />
         <option value="$PROJECT_DIR$/lib/cayuga.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/object/singleton.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/object/object.rb" />
         <option value="$PROJECT_DIR$/spec/objects/logger_spec.rb" />
         <option value="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/object/factory.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/factory_information_helper.rb" />
         <option value="$PROJECT_DIR$/lib/cayuga/object/logger.rb" />
-        <option value="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" />
         <option value="$PROJECT_DIR$/spec/logger_information_helper.rb" />
         <option value="$PROJECT_DIR$/lib/cayuga/version.rb" />
+        <option value="$PROJECT_DIR$/spec/tally_information_helper.java" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/name.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/name_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/value_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/value.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/tallies.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/tallies_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/tally.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/tally_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/objects/tally_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/tally.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/repository.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tools/integer.rb" />
+        <option value="$PROJECT_DIR$/spec/tools/integer_spec.rb" />
+        <option value="$PROJECT_DIR$/cayuga.gemspec" />
+        <option value="$PROJECT_DIR$/spec/tally/big_tally_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tools.rb" />
+        <option value="$PROJECT_DIR$/spec/test/test2018/object.rb" />
+        <option value="$PROJECT_DIR$/spec/objects/factory_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/factory.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/singleton.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/object.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/name_tracker.rb" />
+        <option value="$PROJECT_DIR$/spec/test/configuration/tally.json" />
+        <option value="$PROJECT_DIR$/spec/objects/constants_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/constants.rb" />
+        <option value="$PROJECT_DIR$/spec/test/configuration/cayuga_test_config.json" />
+        <option value="$PROJECT_DIR$/spec/tally/repository_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/representation/simple.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/representation/simple_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/representation_spec.rb" />
+        <option value="$PROJECT_DIR$/out/test/cayuga/tally/repository_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" />
+        <option value="$PROJECT_DIR$/spec/tally_information_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/respository_infrastructure_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/tally_names_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/respository_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/tally/name_tracker_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/representation.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/tally/repository.rb" />
       </list>
     </option>
   </component>
@@ -356,20 +384,21 @@
     <entry key="Project Default">
       <profile-state>
         <expanded-state>
+          <State />
           <State>
-            <id>Concurrency annotation issuesJava</id>
+            <id>Cucumber</id>
           </State>
           <State>
-            <id>Java</id>
+            <id>JRuby</id>
           </State>
           <State>
-            <id>LoggingJava</id>
+            <id>Naming conventionsRuby</id>
           </State>
           <State>
-            <id>Method metricsJava</id>
+            <id>Rails</id>
           </State>
           <State>
-            <id>TypeScript</id>
+            <id>Ruby</id>
           </State>
         </expanded-state>
       </profile-state>
@@ -382,84 +411,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="rspec-expectations (v3.8.2, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="rspec-expectations (v3.8.2, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="rspec-expectations (v3.8.2, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="rspec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="rspec-expectations (v3.8.2, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="rspec" type="462c0819:PsiDirectoryNode" />
-              <item name="matchers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="rspec-expectations (v3.8.2, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="rspec" type="462c0819:PsiDirectoryNode" />
-              <item name="matchers" type="462c0819:PsiDirectoryNode" />
-              <item name="built_in" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -482,10 +433,79 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
+              <item name="object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
+              <item name="tally" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="tally" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga809" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="logger&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/logger_information_helper.rb&#10;lrb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/logger.rb&#10;object&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/object.rb&#10;object.rb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/object.rb&#10;add_appender&#9;null&#9;null&#10;Cayuga::Object&#9;null&#9;null&#10;*.log&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/development.log&#10;ls&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/logger_spec.rb&#10;Test&#9;null&#9;null&#10;constants&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/constants.rb&#10;log&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/test2018#logging_test.log" />
+    <property name="SearchEverywhereHistoryKey" value="simple&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/representation/simple.rb&#10;res&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally/repository_spec.rb&#10;repo&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/repository.rb&#10;nameo&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/named_object.rb&#10;con&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/constants.rb&#10;constants_spec.rb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/objects/constants_spec.rb&#10;taih&#9;null&#9;null&#10;factory&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/factory.rb&#10;fs&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/objects/factory_spec.rb&#10;tih&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally_information_helper.rb&#10;nt&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/name_tracker.rb&#10;nts&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally/name_tracker_spec.rb&#10;facto&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/factory.rb&#10;repos&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/repository.rb&#10;big&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally/big_tally_spec.rb&#10;inter&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tools/integer.rb&#10;integer.&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tools/integer_spec.rb&#10;logger&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/logger_information_helper.rb&#10;lrb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/logger.rb&#10;object&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/object.rb&#10;object.rb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/object.rb&#10;add_appender&#9;null&#9;null&#10;Cayuga::Object&#9;null&#9;null&#10;*.log&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/development.log&#10;ls&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/logger_spec.rb&#10;Test&#9;null&#9;null&#10;constants&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/constants.rb&#10;log&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/test2018#logging_test.log" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../cayuga-support-807" />
     <property name="nodejs.jest.jest_package" value="" />
@@ -497,15 +517,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\tools" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\tally" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib\cayuga\tally" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\objects" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test\configuration" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\configuration\test" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test2018" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib\cayuga\object" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\tools" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\objects" />
@@ -572,6 +592,126 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All specs in spec: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="cayuga" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All specs in tally: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="cayuga" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/spec/tally" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Cayuga::Tally::Repository: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="cayuga" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tally/respository_infrastructure_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Cayuga::Tally::Repository" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run spec 'respository_infrastructure_spec': cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="cayuga" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tally/respository_infrastructure_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -598,140 +738,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="cayuga object should have its own log file: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="cayuga" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="cayuga object should have its own log file" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="cayuga object: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="cayuga" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="cayuga object" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="loggable objects should be able to change log levels: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="cayuga" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="loggable objects should be able to change log levels" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="loggable objects should log information at different levels: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="cayuga" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="loggable objects should log information at different levels" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="RSpec.Run spec 'respository_infrastructure_spec': cayuga" />
+      <item itemvalue="RSpec.All specs in spec: cayuga" />
+      <item itemvalue="RSpec.Cayuga::Tally::Repository: cayuga" />
+      <item itemvalue="RSpec.All specs in tally: cayuga" />
       <item itemvalue="RSpec.All specs in cayuga809: cayuga" />
-      <item itemvalue="RSpec.cayuga object: cayuga" />
-      <item itemvalue="RSpec.cayuga object should have its own log file: cayuga" />
-      <item itemvalue="RSpec.loggable objects should log information at different levels: cayuga" />
-      <item itemvalue="RSpec.loggable objects should be able to change log levels: cayuga" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="RSpec.All specs in cayuga809: cayuga" />
-        <item itemvalue="RSpec.loggable objects should be able to change log levels: cayuga" />
-        <item itemvalue="RSpec.loggable objects should log information at different levels: cayuga" />
-        <item itemvalue="RSpec.cayuga object: cayuga" />
-        <item itemvalue="RSpec.cayuga object should have its own log file: cayuga" />
+        <item itemvalue="RSpec.All specs in tally: cayuga" />
+        <item itemvalue="RSpec.Cayuga::Tally::Repository: cayuga" />
+        <item itemvalue="RSpec.All specs in spec: cayuga" />
+        <item itemvalue="RSpec.Run spec 'respository_infrastructure_spec': cayuga" />
       </list>
     </recent_temporary>
   </component>
@@ -779,7 +799,15 @@
       <workItem from="1541002275516" duration="11159000" />
       <workItem from="1541028759196" duration="29042000" />
       <workItem from="1541072816894" duration="19511000" />
-      <workItem from="1541151099342" duration="6656000" />
+      <workItem from="1541151099342" duration="7722000" />
+      <workItem from="1541161917367" duration="646000" />
+      <workItem from="1541254543575" duration="64138000" />
+      <workItem from="1541394659142" duration="3126000" />
+      <workItem from="1541831459331" duration="178000" />
+      <workItem from="1542067442136" duration="269000" />
+      <workItem from="1542539918916" duration="48000" />
+      <workItem from="1542540453800" duration="713000" />
+      <workItem from="1542545152606" duration="14050000" />
     </task>
     <task id="LOCAL-00001" summary="safety commit">
       <created>1539927767971</created>
@@ -879,64 +907,89 @@
       <option name="project" value="LOCAL" />
       <updated>1541075087989</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="completed factory and logger expect for logging creation and release&#10;and log configuration">
+      <created>1541159733618</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1541159733619</updated>
+    </task>
+    <task id="LOCAL-00016" summary="tally methods in class Integer">
+      <created>1541281071902</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1541281071902</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="loggable_objects_should_be_able_to_change_log_levels__cayuga - 2018.11.02 at 11h 32m 31s.xml">
-      <configuration name="loggable objects should be able to change log levels: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_spec__cayuga - 2018.11.18 at 23h 12m 23s.xml">
+      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="loggable_objects_should_be_able_to_change_log_levels__cayuga - 2018.11.02 at 11h 32m 33s.xml">
-      <configuration name="loggable objects should be able to change log levels: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Cayuga__Tally__Repository__cayuga - 2018.11.18 at 23h 12m 29s.xml">
+      <configuration name="Cayuga::Tally::Repository: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="loggable_objects_should_be_able_to_change_log_levels__cayuga - 2018.11.02 at 11h 35m 09s.xml">
-      <configuration name="loggable objects should be able to change log levels: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_tally__cayuga - 2018.11.18 at 23h 13m 15s.xml">
+      <configuration name="All specs in tally: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="loggable_objects_should_be_able_to_change_log_levels__cayuga - 2018.11.02 at 11h 36m 42s.xml">
-      <configuration name="loggable objects should be able to change log levels: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Cayuga__Tally__Repository__cayuga - 2018.11.18 at 23h 13m 28s.xml">
+      <configuration name="Cayuga::Tally::Repository: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="loggable_objects_should_be_able_to_change_log_levels__cayuga - 2018.11.02 at 11h 38m 37s.xml">
-      <configuration name="loggable objects should be able to change log levels: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_tally__cayuga - 2018.11.19 at 01h 20m 52s.xml">
+      <configuration name="All specs in tally: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="loggable_objects_should_be_able_to_change_log_levels__cayuga - 2018.11.02 at 11h 38m 44s.xml">
-      <configuration name="loggable objects should be able to change log levels: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_tally__cayuga - 2018.11.19 at 01h 24m 36s.xml">
+      <configuration name="All specs in tally: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_cayuga809__cayuga - 2018.11.02 at 11h 38m 58s.xml">
-      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_tally__cayuga - 2018.11.19 at 01h 24m 40s.xml">
+      <configuration name="All specs in tally: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_cayuga809__cayuga - 2018.11.02 at 11h 46m 47s.xml">
-      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_tally__cayuga - 2018.11.19 at 01h 24m 43s.xml">
+      <configuration name="All specs in tally: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_cayuga809__cayuga - 2018.11.02 at 11h 47m 11s.xml">
-      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="All_specs_in_tally__cayuga - 2018.11.19 at 01h 24m 47s.xml">
+      <configuration name="All specs in tally: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_cayuga809__cayuga - 2018.11.02 at 11h 48m 15s.xml">
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2018.11.19 at 10h 16m 32s.xml">
       <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265041000" />
+    <option name="totallyTimeSpent" value="349275000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+      <is-preview-enabled value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4609929" visible="true" weight="0.3865772" />
-      <window_info id="Structure" order="1" sideWeight="0.53900707" side_tool="true" weight="0.3865772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4550898" visible="true" weight="0.43154362" />
+      <window_info id="Structure" order="1" sideWeight="0.5449102" side_tool="true" weight="0.43221477" />
       <window_info id="Learn" order="2" weight="0.3295302" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49932885" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.66950357" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49395972" weight="0.5262411" />
-      <window_info anchor="bottom" x="23" y="198" width="1490" height="427" id="Debug" order="4" sideWeight="0.49932885" weight="0.6042553" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49328858" weight="0.5262411" />
+      <window_info anchor="bottom" x="23" y="198" width="1490" height="427" id="Debug" order="4" sideWeight="0.49597314" weight="0.6042553" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="TODO" order="7" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49597314" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49731544" visible="true" weight="0.5262411" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5060403" side_tool="true" weight="0.5262411" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49731544" weight="0.5262411" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5067114" side_tool="true" weight="0.5262411" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -944,30 +997,6 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48414376" visible="true" weight="0.31275168" />
-      <window_info id="Structure" order="1" sideWeight="0.51585627" side_tool="true" weight="0.31275168" />
-      <window_info id="Learn" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.32765958" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49731544" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5026846" side_tool="true" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1015,61 +1044,44 @@
     <MESSAGE value="refactoring:  Root Object" />
     <MESSAGE value="refactored all cayuga objects into class heirarchy" />
     <MESSAGE value="refactor logging into loggable objects, logger and cayuga objects + added logger configuration pending examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor logging into loggable objects, logger and cayuga objects + added logger configuration pending examples" />
+    <MESSAGE value="completed factory and logger expect for logging creation and release&#10;and log configuration" />
+    <MESSAGE value="tally methods in class Integer" />
+    <MESSAGE value="just before decision to have context manager and context in cayuga/module" />
+    <option name="LAST_COMMIT_MESSAGE" value="just before decision to have context manager and context in cayuga/module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="ruby-line">
-          <url>file://$PROJECT_DIR$/out/test/cayuga/logger_spec.rb</url>
-          <line>20</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/cayuga/tools/loggable.rb</url>
-          <line>11</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="ruby-line">
-          <url>file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/semantic_logger-4.3.0/lib/semantic_logger/loggable.rb</url>
-          <line>34</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/objects/object_spec.rb</url>
-          <line>7</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb</url>
-          <line>45</line>
-          <option name="timeStamp" value="156" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/logger_information_helper.rb</url>
-          <line>14</line>
-          <option name="timeStamp" value="174" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/test/test2018/logging_test.rb</url>
-          <line>11</line>
-          <option name="timeStamp" value="176" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/tools/loggable_object_spec.rb</url>
           <line>20</line>
-          <option name="timeStamp" value="179" />
+          <option name="timeStamp" value="198" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/cayuga/object/logger.rb</url>
-          <line>25</line>
-          <option name="timeStamp" value="180" />
+          <url>file://$PROJECT_DIR$/lib/cayuga/tally/name_tracker.rb</url>
+          <line>8</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/tally/tally_names_spec.rb</url>
+          <line>111</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/lib/cayuga/tally/repository.rb</url>
+          <line>56</line>
+          <option name="timeStamp" value="213" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="RSpecRunConfigurationType">
+        <watch expression="[2]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -1139,237 +1151,68 @@ end</expression-string>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>subject</expression-string>
+        <expression-string>klass.input_type('000_000')</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>subject.class</expression-string>
+        <expression-string>klass::TYPES</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>logger.log_appender(subject.class)</expression-string>
+        <expression-string>klass.TYPES</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>logger_log_appender(subject.class)</expression-string>
+        <expression-string>klass</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>factory[Cayuga::Object::Logger].log_logs</expression-string>
+        <expression-string>value + 1</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>logger.log_logs</expression-string>
+        <expression-string>value%255</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>log_logs</expression-string>
+        <expression-string>value/16%16</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>log</expression-string>
+        <expression-string>value%16</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>target</expression-string>
+        <expression-string>value</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/singleton.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/main.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/object_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.rspec">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/semantic_logger-4.3.0/lib/semantic_logger/processor.rb">
+    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/ice_nine-0.11.2/lib/ice_nine.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.rubocop.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/semantic_logger-4.3.0/lib/semantic_logger/appender/async.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/semantic_logger-4.3.0/lib/semantic_logger/appender.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/loggable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/class.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cayuga#object#logger.log" />
-    <entry file="file://$PROJECT_DIR$/.rspec_status">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cayuga.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cayuga.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/constants.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/example.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="255" selection-start-line="255" selection-end-line="255" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tool_information_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_PLUGINS_DIR$/ruby/rb/testing/patch/bdd/teamcity/spec/runner/formatter/teamcity/formatter.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="696" selection-start-line="696" selection-end-line="696" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration_options.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/runner.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/ruby-debug-ide-0.7.0.beta6/lib/ruby-debug-ide.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/configuration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="1518" selection-start-line="1518" selection-end-line="1518" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/factory_spec.rb">
+    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/ice_nine-0.11.2/lib/ice_nine/freezer/array.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
-          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/constants_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/singleton.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="9" selection-start-line="8" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-support-3.8.0/lib/rspec/support/reentrant_mutex.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/symbol.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tally/big_tally_spec.rb" />
     <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/semantic_logger-4.3.0/lib/semantic_logger/semantic_logger.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1377,55 +1220,26 @@ end</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/factory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factory_information_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/cayuga_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tools/string_spec.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/cayuga#object#constants.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/cayuga#object#logger.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-support-3.8.0/lib/rspec/support.rb">
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/ruby/rubystubs/rubystubs24/module.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
+          <caret line="1080" column="8" selection-start-line="1080" selection-start-column="8" selection-end-line="1080" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/test2018#logging_test.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    <entry file="file://$PROJECT_DIR$/spec/tools/loggable_object_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/logger.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/test/test2018/logging_test.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1434,62 +1248,268 @@ end</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/memoized_helpers.rb">
+    <entry file="file://$PROJECT_DIR$/spec/test/test2018/named_object.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/logger_information_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/test/test2018/singleton.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/singleton.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test/test2018/object.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/object.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/ruby/rubystubs/rubystubs24/integer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="239" column="8" selection-start-line="239" selection-start-column="8" selection-end-line="239" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rake-10.5.0/lib/rake/dsl_definition.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test/configuration/test_tallies.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="132" column="64" selection-start-line="132" selection-start-column="64" selection-end-line="132" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/factory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/objects/constants_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/constants.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test/configuration/cayuga_test_config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_PLUGINS_DIR$/ruby/rubystubs/rubystubs24/array.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="1154" column="50" lean-forward="true" selection-start-line="1154" selection-start-column="50" selection-end-line="1154" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-core-3.8.0/lib/rspec/core/memoized_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5049">
+          <caret line="297" selection-start-line="297" selection-end-line="297" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-support-3.8.0/lib/rspec/support.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tally/representation_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/objects/factory_spec.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/test/cayuga/tally/repository_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="107" column="2" selection-start-line="107" selection-start-column="2" selection-end-line="107" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/integer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/tally/name_tracker.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/setup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/named_object.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/class.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/objects/object_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tally/tally_names_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tally/respository_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/tally.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/objects/logger_spec.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/logger.rb">
+    <entry file="file://$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="217">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tools/loggable_object_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/tally/respository_infrastructure_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="43">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rspec-expectations-3.8.2/lib/rspec/matchers/built_in/change.rb">
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="374" selection-start-line="374" selection-end-line="374" />
+        <state relative-caret-position="153">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/factory_information_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cayuga.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="179">
+          <caret line="39" selection-start-line="38" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/named_object.rb">
+    <entry file="file://$PROJECT_DIR$/spec/tool_information_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/loggable.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/tally/representation.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="249">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/version.rb">
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/tally/repository.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="235">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tally/name_tracker_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/logger_information_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tally_information_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -1569,6 +1589,17 @@ end</expression-string>
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

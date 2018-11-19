@@ -36,4 +36,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "file-tail", "~>1.2"
   spec.add_development_dependency "facets", "~>3.1"
   spec.add_development_dependency "memoist", "~>0.16"
+  spec.add_development_dependency "ice_nine", "~>0.11"
 end

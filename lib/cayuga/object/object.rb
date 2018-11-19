@@ -14,6 +14,10 @@ module Cayuga
 
       attr_reader :configuration_name
 
+      def self.create(factory, configuration)
+        new(factory, configuration)
+      end
+
       private_class_method :new
 
       private

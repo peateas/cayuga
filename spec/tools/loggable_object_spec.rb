@@ -18,7 +18,8 @@ RSpec.describe 'loggable objects' do
   it 'should be able to change log levels' do
     verify_log_log(subject)
     [subject.log, logger.log_appender(subject)].each do |entity|
-      expect { entity.level = :info; entity.level = :debug }.to change(entity, :level)
+      entity.level = :info
+      expect { entity.level = :debug }.to change(entity, :level)
     end
   end
 
