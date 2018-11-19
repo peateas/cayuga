@@ -1,7 +1,6 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'file-tail'
 require 'cayuga'
 
 module Cayuga
