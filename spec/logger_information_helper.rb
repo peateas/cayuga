@@ -25,10 +25,19 @@ module LoggerInformationHelper
       filter = Regexp.new(thread_info)
       yield
       SemanticLogger.flush
-      records = logger.tail(target).select { |record| record =~ filter }
+      records = tail(logger,target).select { |record| record =~ filter }
     end
     thread.join
     records
   end
+
+  def tail(logger, name, size: 5)
+    File.open(logger.log_filename(name)) do |log|
+      log.extend File::Tail
+      log.return_if_eof = true
+      log.backward(size).tail(size)
+    end
+  end
+
 
 end

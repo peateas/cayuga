@@ -67,14 +67,6 @@ module Cayuga
         logger.info('logs', payload = { count: SemanticLogger.appenders.count })
       end
 
-      def tail(name, size: 5)
-        File.open(log_filename(name)) do |log|
-          log.extend File::Tail
-          log.return_if_eof = true
-          log.backward(size).tail(size)
-        end
-      end
-
       private_class_method :new
 
       private

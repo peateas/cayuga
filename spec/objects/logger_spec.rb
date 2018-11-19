@@ -48,7 +48,7 @@ RSpec.describe Cayuga::Object::Logger do
   it 'should be able to get tail of log' do
     subject.log.info('testing tail')
     SemanticLogger.flush
-    records = subject.tail(:main)
+    records = tail(subject, :main)
     expect(records.size).to be > 0
   end
 
