@@ -82,6 +82,10 @@ module Cayuga
 
       private
 
+      OBJECTS = {
+        singletons: %w(Cayuga::Object::Logger Cayuga::Object::Constants)
+      }.deep_freeze
+
       attr_reader :configuration, :types, :instances
 
       def initialize(config)
@@ -89,7 +93,8 @@ module Cayuga
         @configuration_name = configuration[:configuration_name]
         @logs_directory = configuration[:directories][:logs]
         @types = {}
-        register_classes(configuration[:object_classes],:object)
+        register_classes(configuration[:object_classes], :object)
+        register_classes(OBJECTS[:singletons], :singleton)
         register_classes(configuration[:singleton_classes], :singleton)
         register_classes(
           configuration[:named_object_classes], :named

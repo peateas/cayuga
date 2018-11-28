@@ -15,8 +15,4 @@ RSpec.describe Cayuga::Object::Constants do
     expect(subject.file(:test_file)).to be == 'test_file'
   end
 
-  it 'should have repositories' do
-    expect(subject.repository(:test_repository)).to be == 'test_repository'
-  end
-
 end

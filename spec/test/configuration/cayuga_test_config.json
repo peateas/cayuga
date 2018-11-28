@@ -1,17 +1,13 @@
 {
-  "configuration_name":  "Test Configuration for Model 2018 Factory",
+  "configuration_name": "Test Configuration for Model 2018 Factory",
   "object_classes": [
-    "Test2018::Object",
-    "Cayuga::Tally::NameTracker"
+    "Test2018::Object"
   ],
   "singleton_classes": [
-    "Cayuga::Object::Logger",
-    "Cayuga::Object::Constants",
     "Test2018::Singleton"
   ],
   "named_object_classes": [
-    "Test2018::NamedObject",
-    "Cayuga::Tally::Repository"
+    "Test2018::NamedObject"
   ],
   "constants": {
     "test_constant": "test_constant"
@@ -23,10 +19,5 @@
   "files": {
     "test_file": "test_file",
     "test_tallies": "spec/test/configuration/test_tallies.json"
-  },
-  "repositories": {
-    "test_repository": "test_repository",
-    "test_tallies":  "Test Tallies 2018"
   }
-
 }
