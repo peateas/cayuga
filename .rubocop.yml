@@ -19,6 +19,9 @@ Layout/SpaceAroundOperators:
 Layout/TrailingBlankLines:
   Enabled:  false
 
+Metrics/BlockLength:
+  ExcludedMethods: [ RSpec.describe ]
+
 Metrics/MethodLength:
   Enabled:  true
   Max: 15

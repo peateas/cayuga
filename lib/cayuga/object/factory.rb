@@ -60,19 +60,18 @@ module Cayuga
 
       def release(klass, name = nil)
         key = klass.symbolize
-        if registered?(key, name)
-          type = type(key)
-          case type
-            when :singleton #, :factory
-              instances.delete(key)
-            when :named
-              value = instances[key]
-              if value
-                value.delete(name)
-              end
-            else
-              raise "bad type '#{type}'"
-          end
+        return unless registered?(key, name)
+        type = type(key)
+        case type
+          when :singleton
+            instances.delete(key)
+          when :named
+            value = instances[key]
+            if value
+              value.delete(name)
+            end
+          else
+            raise "bad type '#{type}'"
         end
       end
 
@@ -83,15 +82,22 @@ module Cayuga
       private
 
       OBJECTS = {
-        singletons: %w(Cayuga::Object::Logger Cayuga::Object::Constants)
+        singletons: %w[Cayuga::Object::Logger Cayuga::Object::Constants]
       }.deep_freeze
 
       attr_reader :configuration, :types, :instances
 
       def initialize(config)
-        @configuration = JSON.parse(File.read(config), symbolize_names: true).deep_freeze
+        @configuration =
+          JSON.parse(File.read(config), symbolize_names: true).deep_freeze
         @configuration_name = configuration[:configuration_name]
         @logs_directory = configuration[:directories][:logs]
+        setup_types
+        @instances = {}
+        @directories = configuration[:directories].freeze
+      end
+
+      def setup_types
         @types = {}
         register_classes(configuration[:object_classes], :object)
         register_classes(OBJECTS[:singletons], :singleton)
@@ -99,8 +105,6 @@ module Cayuga
         register_classes(
           configuration[:named_object_classes], :named
         )
-        @instances = {}
-        @directories = configuration[:directories].freeze
       end
 
       def register_classes(list, type)
@@ -120,11 +124,6 @@ module Cayuga
 
       def create_instance(type, klass, name)
         case type
-          # when :factory
-          #   object = klass.create(self, configuration)
-          #   unless klass == LoggerFactory
-          #     log.info("factory #{klass} created ")
-          #   end
           when :object, :singleton
             object = klass.create(self, configuration)
           # log.info("singleton #{klass} created ")

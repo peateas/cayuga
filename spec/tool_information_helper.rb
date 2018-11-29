@@ -17,5 +17,5 @@ module ToolInformationHelper
     filename:  'test2018#named_object'
   }].freeze
 
-  NON_CLASS_STRINGS = %W/!@#$% ToolInformationHelper::NON_CLASS_STRINGS/
+  NON_CLASS_STRINGS = %w[!@#$% ToolInformationHelper::NON_CLASS_STRINGS].freeze
 end

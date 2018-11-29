@@ -17,7 +17,7 @@ module Cayuga
           alias_method :log, :logger
 
           def self.log_file
-            "#{self.filenamify('.log')}"
+            filenamify('.log')
           end
 
         end

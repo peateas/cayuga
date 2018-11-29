@@ -22,7 +22,7 @@ module Cayuga
 
       def filenamify(extension = nil)
         # noinspection RubyResolve
-        result = pathize.gsub('/', '#')
+        result = pathize.tr('/', '#')
         unless extension.nil? || extension.empty?
           result += extension[0] == '.' ? '' : '.'
           result += extension.stringify

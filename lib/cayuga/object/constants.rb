@@ -5,6 +5,7 @@ require 'cayuga'
 
 module Cayuga
   module Object
+    # noinspection RubyModuleAsSuperclassInspection
     class Constants < Singleton
       def constant(constant)
         constants[constant.symbolize]

@@ -9,6 +9,8 @@ module Cayuga
   RootObject = Object
 
   module Object
+
+    # Cayuga Object Object
     class Object
       include Tools::Loggable
 
@@ -28,10 +30,9 @@ module Cayuga
         @factory = factory
         @configuration = configuration
         @configuration_name = factory.configuration_name
-        factory[Logger].log_log!(
-          self.class,
-          filter: Regexp.new(self.class.stringify)
-        ) unless self.class == Logger
+        return if self.class == Logger
+        factory[Logger]
+          .log_log!(self.class, filter: Regexp.new(self.class.stringify))
       end
 
     end

@@ -6,7 +6,9 @@ require 'test/test2018/singleton'
 require 'test/test2018/named_object'
 
 RSpec.describe Cayuga::Object::Factory do
+  # noinspection RubyBlockToMethodReference
   subject { factory }
+
   it 'should exist' do
     expect(factory).to be_instance_of Cayuga::Object::Factory
   end
@@ -17,7 +19,6 @@ RSpec.describe Cayuga::Object::Factory do
     expect(factory.logs_directory).not_to be_empty
     expect(Dir).to exist(factory.logs_directory)
   end
-
 
   it 'should have registered object classes' do
     expect(factory).to be_supported Test2018::Object
@@ -51,9 +52,10 @@ RSpec.describe Cayuga::Object::Factory do
     expect(subject).to be_registered(Test2018::Singleton)
     expect(one).to be(two)
   end
-  
+
   it 'should provide a named instance of a named object class' do
-    expect(subject[Test2018::NamedObject, :one]).to be_instance_of Test2018::NamedObject
+    expect(subject[Test2018::NamedObject, :one])
+      .to be_instance_of Test2018::NamedObject
     expect(subject).to be_registered(Test2018::NamedObject, :one)
   end
 
@@ -64,11 +66,10 @@ RSpec.describe Cayuga::Object::Factory do
   end
 
   it 'should be able to release a named object' do
-    expect(subject[Test2018::NamedObject, :one]).to be_instance_of Test2018::NamedObject
+    expect(subject[Test2018::NamedObject, :one])
+      .to be_instance_of Test2018::NamedObject
     subject.release(Test2018::NamedObject, :one)
     expect(subject).not_to be_registered(Test2018::Singleton)
   end
-
-
 
 end

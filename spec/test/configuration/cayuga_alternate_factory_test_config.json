@@ -1,0 +1,17 @@
+{
+  "configuration_name": "Alternate Factory Configuration",
+  "object_classes": [
+  ],
+  "singleton_classes": [
+  ],
+  "named_object_classes": [
+  ],
+  "constants": {
+    "log_annotation_marker": "-alternate"
+  },
+  "directories": {
+    "logs": "spec/test/logs/alternate"
+  },
+  "files": {
+  }
+}

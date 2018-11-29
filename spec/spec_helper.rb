@@ -3,6 +3,7 @@ require 'cayuga'
 require 'factory_information_helper'
 require 'logger_information_helper'
 require 'tool_information_helper'
+require 'alternate_factory_helper'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -16,14 +17,17 @@ RSpec.configure do |config|
   end
 
   config.before(:suite) do
-    CONFIGURATION_INFORMATION = 'spec/test/configuration/cayuga_test_config.json'.freeze
-    FACTORY =  Cayuga::Object::Factory.new CONFIGURATION_INFORMATION
+    CONFIGURATION_INFORMATION =
+      'spec/test/configuration/cayuga_test_config.json'.freeze
+    FACTORY = Cayuga::Object::Factory.new CONFIGURATION_INFORMATION
   end
 
   config.include FactoryInformationHelper
   config.include LoggerInformationHelper
   # noinspection RubyResolve
   config.include ToolInformationHelper, for_tools: true
+  # noinspection RubyResolve
+  config.include AlternateFactoryHelper, for_alternate_factory: true
 
 end
 

@@ -29,7 +29,9 @@ RSpec.describe 'cayuga object' do
         logger.log.info('extra log for exclusivity test')
         factory.log.info('extra log for exclusivity test')
         SemanticLogger.flush
-        records = tail(logger, instance.class).select { |record| record =~ filter }
+        records = tail(logger, instance.class).select do |record|
+          record =~ filter
+        end
         case instance
           when Cayuga::Object::Factory, Cayuga::Object::Logger
             expect(records.size).to be == 2

@@ -5,18 +5,20 @@ require 'file-tail'
 
 module LoggerInformationHelper
   def verify_log_log(name)
+    return if logger.log_log?(name)
     logger.log_log!(
       name,
       filename: logger.generic_log_file(name),
       filter: Regexp.new(name.stringify)
-    ) unless logger.log_log?(name)
+    )
   end
 
   def check_logs(target, level, count, &block)
     target.log.level = level
     logger.log_appender(target).level = nil
     logs = get_logs(subject, &block)
-    expect(logs.size).to be == count, "expected #{count} logs for #{target}, got #{logs.size}"
+    expect(logs.size).to be == count,
+      "expected #{count} logs for #{target}, got #{logs.size}"
   end
 
   def get_logs(target)
@@ -26,7 +28,7 @@ module LoggerInformationHelper
       filter = Regexp.new(thread_info)
       yield
       SemanticLogger.flush
-      records = tail(logger,target).select { |record| record =~ filter }
+      records = tail(logger, target).select { |record| record =~ filter }
     end
     thread.join
     records
@@ -39,6 +41,5 @@ module LoggerInformationHelper
       log.backward(size).tail(size)
     end
   end
-
 
 end

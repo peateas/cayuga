@@ -14,7 +14,7 @@ RSpec.describe Cayuga::Tools::String, for_tools: true do
 
   it 'generates an error when classified if not a class string' do
     ToolInformationHelper::NON_CLASS_STRINGS.each do |string|
-      expect{string.classify}.to raise_error(NameError, /wrong .* name/)
+      expect { string.classify }.to raise_error(NameError, /wrong .* name/)
     end
   end
 

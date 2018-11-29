@@ -20,7 +20,9 @@ module Cayuga
       end
 
       def self.create(factory, configuration, name)
-        raise "#{self.stringify}[#{name}] already registered" if factory.registered?(self, name)
+        if factory.registered?(self, name)
+          raise "#{stringify}[#{name}] already registered"
+        end
         if primary?(name)
           primary = name
           alternate = nil

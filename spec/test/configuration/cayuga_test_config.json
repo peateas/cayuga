@@ -17,7 +17,6 @@
     "logs": "spec/test/logs"
   },
   "files": {
-    "test_file": "test_file",
-    "test_tallies": "spec/test/configuration/test_tallies.json"
+    "test_file": "test_file"
   }
 }
