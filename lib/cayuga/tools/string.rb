@@ -2,7 +2,7 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 # noinspection RubyResolve
-require 'facets/string/pathize'
+require 'facets/string/methodize'
 
 module Cayuga
   module Tools
@@ -13,7 +13,7 @@ module Cayuga
       end
 
       def symbolize
-        to_sym
+        standardize.tr('-', '_').gsub('::', '__').to_sym
       end
 
       def classify
@@ -21,16 +21,45 @@ module Cayuga
       end
 
       def filenamify(extension = nil)
-        # noinspection RubyResolve
-        result = pathize.tr('/', '#')
-        unless extension.nil? || extension.empty?
-          result += extension[0] == '.' ? '' : '.'
-          result += extension.stringify
+        symbolize.filenamify(extension)
+      end
+
+      private
+
+      def alternative?
+        match(/[A-Z]/)
+      end
+
+      def standardize
+        return self unless alternative?
+        standardize_string(self)
+      end
+
+      def standardize_string(string)
+        return string if string.empty?
+        string =~ /^([^A-Za-z0-9]+)?([A-Za-z0-9]+)?(.*)$/
+        my_matches = []
+        (1..3).each do |i|
+          last = Regexp.last_match(i)
+          my_matches << (last.nil? ? '' : last)
         end
-        result
+        my_matches[0] +
+          standardize_word(my_matches[1]) +
+          standardize_string(my_matches[2])
+      end
+
+      def standardize_word(word)
+        case word
+          when /[A-Z][a-z]/
+            # noinspection RubyResolve
+            word.methodize
+          else
+            word
+        end
       end
 
     end
+
   end
 end
 

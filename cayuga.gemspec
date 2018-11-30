@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   # added into git.
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject do |f|
-      f.match(%r{^(test|spec|features)/})
+      f.match(%r{^(test|spec|features|.idea|bin)/})
     end
   end
   spec.bindir = 'exe'

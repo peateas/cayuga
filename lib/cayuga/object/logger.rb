@@ -74,10 +74,10 @@ module Cayuga
       end
 
       def create_logs
-        log_log!(:console, stream: $stderr, level: :warn)
         log_log!(:main, filename: generic_log_file(:main))
-        log_log!(factory.class, filter: Regexp.new(factory.class.stringify))
-        log_log!(self.class, filter: Regexp.new(self.class.stringify))
+        log_log!(self.class, filter: Regexp.new(self.class.name))
+        log_log!(:console, stream: $stderr, level: :warn)
+        log_log!(factory.class, filter: Regexp.new(factory.class.name))
       end
 
       def log_appender_exists?(name)

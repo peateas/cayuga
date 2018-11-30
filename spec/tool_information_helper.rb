@@ -6,16 +6,26 @@ require 'test/test2018/named_object'
 
 module ToolInformationHelper
   STRING_SYMBOL_CLASS_EXAMPLES = [{
-    string: 'Test2018::Singleton',
-    symbol: :'Test2018::Singleton',
+    string: 'test2018::singleton',
+    alternative_string: 'Test2018::Singleton',
+    symbol: :test2018__singleton,
     class: Test2018::Singleton,
-    filename: 'test2018#singleton'
+    filename: 'test2018__singleton'
   }, {
-    string: 'Test2018::NamedObject',
-    symbol: :'Test2018::NamedObject',
+    string: 'test2018::named-object',
+    alternative_string: 'Test2018::NamedObject',
+    symbol: :test2018__named_object,
     class: Test2018::NamedObject,
-    filename:  'test2018#named_object'
+    filename: 'test2018__named_object'
   }].freeze
 
-  NON_CLASS_STRINGS = %w[!@#$% ToolInformationHelper::NON_CLASS_STRINGS].freeze
+  NON_CLASS_STRINGS =
+    %w[!@#$% ToolInformationHelper::NON_CLASS_STRINGS $_].freeze
+
+  STRING_SYMBOL_EXAMPLES = [{
+    string: 'tool-information-helper::NON-CLASS-STRINGS',
+    alternative_string: 'ToolInformationHelper::NON_CLASS_STRINGS',
+    symbol: :tool_information_helper__NON_CLASS_STRINGS
+  }].freeze
+
 end

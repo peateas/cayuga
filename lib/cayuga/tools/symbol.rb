@@ -1,13 +1,15 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
+# noinspection RubyResolve
+require 'facets/string/modulize'
 
 module Cayuga
   module Tools
     # Cayuga Tools Symbol
     module Symbol
       def stringify
-        to_s
+        to_s.gsub('__', '::').tr('_', '-')
       end
 
       def symbolize
@@ -15,13 +17,20 @@ module Cayuga
       end
 
       def classify
-        klass = Object.const_get(to_s)
+        # noinspection RubyResolve
+        klass = Object.const_get(to_s.modulize)
         raise NameError, "wrong class name '#{klass}'" unless klass.is_a?(Class)
         klass
       end
 
       def filenamify(extension = nil)
-        stringify.filenamify(extension)
+        # noinspection RubyResolve
+        result = to_s
+        unless extension.nil? || extension.empty?
+          result += extension[0] == '.' ? '' : '.'
+          result += extension.stringify
+        end
+        result
       end
 
     end

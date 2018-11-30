@@ -9,6 +9,10 @@ RSpec.describe Cayuga::Tools::String, for_tools: true do
       expect(string.stringify).to be == string
       expect(string.symbolize).to be == example[:symbol]
       expect(string.classify).to be == example[:class]
+      string = example[:alternative_string]
+      expect(string.stringify).to be == string
+      expect(string.symbolize).to be == example[:symbol]
+      expect(string.classify).to be == example[:class]
     end
   end
 
@@ -22,6 +26,15 @@ RSpec.describe Cayuga::Tools::String, for_tools: true do
     ToolInformationHelper::STRING_SYMBOL_CLASS_EXAMPLES.each do |example|
       target = example[:string]
       expect(target.filenamify).to be == example[:filename]
+    end
+  end
+
+  it 'handles other strings' do
+    ToolInformationHelper::STRING_SYMBOL_EXAMPLES.each do |example|
+      [example[:string], example[:alternative_string]].each do |string|
+        expect(string.stringify).to be == string
+        expect(string.symbolize).to be == example[:symbol]
+      end
     end
   end
 

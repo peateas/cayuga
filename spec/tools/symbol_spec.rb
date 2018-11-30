@@ -26,4 +26,11 @@ RSpec.describe Cayuga::Tools::Symbol, for_tools: true do
     end
   end
 
+  it 'handles other strings' do
+    ToolInformationHelper::STRING_SYMBOL_EXAMPLES.each do |example|
+      symbol = example[:symbol]
+      expect(symbol.stringify).to be == example[:string]
+    end
+  end
+
 end

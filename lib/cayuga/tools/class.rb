@@ -1,17 +1,17 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-
 module Cayuga
   module Tools
     # Cayuga Tools Class
     module Class
       def stringify
-        name
+        symbolize.stringify
       end
 
       def symbolize
-        name.to_sym
+        # noinspection RubyResolve
+        name.methodize.to_sym
       end
 
       def classify
@@ -19,7 +19,7 @@ module Cayuga
       end
 
       def filenamify(extension = nil)
-        stringify.filenamify(extension)
+        symbolize.filenamify(extension)
       end
 
     end

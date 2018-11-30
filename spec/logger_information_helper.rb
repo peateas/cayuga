@@ -6,10 +6,17 @@ require 'file-tail'
 module LoggerInformationHelper
   def verify_log_log(name)
     return if logger.log_log?(name)
+    filter =
+      case name
+        when Class
+          name.name
+        else
+          name.stringify
+      end
     logger.log_log!(
       name,
       filename: logger.generic_log_file(name),
-      filter: Regexp.new(name.stringify)
+      filter: Regexp.new(filter)
     )
   end
 

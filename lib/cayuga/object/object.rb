@@ -32,7 +32,7 @@ module Cayuga
         @configuration_name = factory.configuration_name
         return if self.class == Logger
         factory[Logger]
-          .log_log!(self.class, filter: Regexp.new(self.class.stringify))
+          .log_log!(self.class, filter: Regexp.new(self.class.name))
       end
 
     end

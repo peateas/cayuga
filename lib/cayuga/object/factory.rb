@@ -5,11 +5,13 @@ require 'json'
 require 'ice_nine'
 require 'ice_nine/core_ext/object'
 require 'cayuga'
+require_relative 'factory_helper.rb'
 
 module Cayuga
   module Object
     # Cayuga Object Factory
     class Factory
+      include Cayuga::Object::FactoryHelper
       include Tools::Loggable
 
       attr_reader :configuration_name, :logs_directory
@@ -28,14 +30,9 @@ module Cayuga
 
       def register(instance, klass, name = nil)
         key = klass.symbolize
-        unless lookup_registered_instances(key, name).nil?
-          value = name.nil? ? klass.string : "#{klass.string}[#{name}]"
-          raise "instance for #{value} already registered}"
-        end
         type = type(key)
+        generate_registration_errors(klass, name, key, type)
         case type
-          when :singleton # , :factory
-            instances[key] = instance
           when :named
             value = instances[key]
             if value.nil?
@@ -44,7 +41,7 @@ module Cayuga
             end
             value[name] = instance
           else
-            raise "bad type '#{type}'"
+            instances[key] = instance
         end
         instance
       end
@@ -81,10 +78,6 @@ module Cayuga
 
       private
 
-      OBJECTS = {
-        singletons: %w[Cayuga::Object::Logger Cayuga::Object::Constants]
-      }.deep_freeze
-
       attr_reader :configuration, :types, :instances
 
       def initialize(config)
@@ -97,46 +90,6 @@ module Cayuga
         @directories = configuration[:directories].freeze
       end
 
-      def setup_types
-        @types = {}
-        register_classes(configuration[:object_classes], :object)
-        register_classes(OBJECTS[:singletons], :singleton)
-        register_classes(configuration[:singleton_classes], :singleton)
-        register_classes(
-          configuration[:named_object_classes], :named
-        )
-      end
-
-      def register_classes(list, type)
-        return if list.nil?
-        list.each do |klass|
-          types[klass.symbolize] = type
-        end
-      end
-
-      def lookup_registered_instances(key, name)
-        value = instances[key]
-        if !value.nil? && !name.nil?
-          value = value[name]
-        end
-        value
-      end
-
-      def create_instance(type, klass, name)
-        case type
-          when :object, :singleton
-            object = klass.create(self, configuration)
-          # log.info("singleton #{klass} created ")
-          when :named
-            object = klass.create(self, configuration, name)
-          # log.info("#{klass} created with name #{name}")
-          else
-            raise "unregistered or incorrectly registered class #{klass}"
-        end
-        object
-      end
-
     end
-
   end
 end
