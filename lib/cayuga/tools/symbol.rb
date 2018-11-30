@@ -9,7 +9,7 @@ module Cayuga
     # Cayuga Tools Symbol
     module Symbol
       def stringify
-        to_s.gsub('__', '::').tr('_', '-')
+        to_s.gsub('___', '#').gsub('__', '::').tr('_', '-')
       end
 
       def symbolize

@@ -26,6 +26,10 @@ module ToolInformationHelper
     string: 'tool-information-helper::NON-CLASS-STRINGS',
     alternative_string: 'ToolInformationHelper::NON_CLASS_STRINGS',
     symbol: :tool_information_helper__NON_CLASS_STRINGS
+  }, {
+    string:  'a#thing#in#the#universe',
+    alternative_string:  'A#Thing#in#the#Universe',
+    symbol:  :a___thing___in___the___universe
   }].freeze
 
 end

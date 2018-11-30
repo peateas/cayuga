@@ -13,7 +13,7 @@ module Cayuga
       end
 
       def symbolize
-        standardize.tr('-', '_').gsub('::', '__').to_sym
+        standardize.tr('-', '_').gsub('::', '__').gsub('#', '___').to_sym
       end
 
       def classify
@@ -37,7 +37,7 @@ module Cayuga
 
       def standardize_string(string)
         return string if string.empty?
-        string =~ /^([^A-Za-z0-9]+)?([A-Za-z0-9]+)?(.*)$/
+        string =~ /^([^A-Za-z0-9])?([A-Za-z0-9]+)?(.*)$/
         my_matches = []
         (1..3).each do |i|
           last = Regexp.last_match(i)
@@ -50,11 +50,11 @@ module Cayuga
 
       def standardize_word(word)
         case word
-          when /[A-Z][a-z]/
+          when /^([a-z0-9]*)$|^([A-Z0-9][A-Z0-9]+)$/
+            word
+          else
             # noinspection RubyResolve
             word.methodize
-          else
-            word
         end
       end
 
