@@ -55,7 +55,8 @@ RSpec.describe Cayuga::Object::Logger do
       filter = Regexp.new(thread_info)
       subject.log.info(
         'testing log directory',
-        payload: { expected: file, actual: subject[subject.class] }
+        expected: file,
+        actual: subject[subject.class]
       )
       SemanticLogger.flush
       File.open(file) do |log|

@@ -47,9 +47,9 @@ module Cayuga
           remove_any_orphan_appender(name)
           make_appender(name, filename, stream, filter, level)
         end
-        logger.info('log created', payload: { name: name })
-        logger.debug('logs', payload: { log_names: log_names })
-        logger.debug('logs', payload: { count: SemanticLogger.appenders.count })
+        logger.info('log created', name: name)
+        logger.debug('logs', log_names: log_names)
+        logger.debug('logs', count: SemanticLogger.appenders.count)
         log_filename(name)
       end
 
@@ -102,8 +102,8 @@ module Cayuga
       def remove_any_orphan_appender(name)
         return if log_log?(name)
         return unless log_appender_exists?(name)
-        logger.warn('log without registration', payload: { name: name })
-        logger.debug('log without registration', payload: { log: log_names })
+        logger.warn('log without registration', name: name)
+        logger.debug('log without registration', log: log_names)
         SemanticLogger.remove_appender(log_appender(name))
       end
 
