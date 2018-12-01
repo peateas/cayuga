@@ -16,6 +16,14 @@ module Cayuga
 
       attr_reader :configuration_name, :logs_directory
 
+      def logger
+        @logger ||= self[Cayuga::Object::Logger]
+      end
+
+      def constants
+        @constants ||= self[Cayuga::Object::Constants]
+      end
+
       def supported?(klass)
         types.key?(klass.symbolize)
       end
@@ -70,10 +78,6 @@ module Cayuga
           else
             raise "bad type '#{type}'"
         end
-      end
-
-      def directory_constants
-        @directories.freeze
       end
 
       private

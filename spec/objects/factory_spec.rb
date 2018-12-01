@@ -20,6 +20,13 @@ RSpec.describe Cayuga::Object::Factory do
     expect(Dir).to exist(factory.logs_directory)
   end
 
+  it 'should have logger and constants' do
+    expect(factory).to have_attributes(
+      logger: be_a(Cayuga::Object::Logger),
+      constants: be_a(Cayuga::Object::Constants)
+    )
+  end
+
   it 'should have registered object classes' do
     expect(factory).to be_supported Test2018::Object
     expect(factory.type(Test2018::Object))
