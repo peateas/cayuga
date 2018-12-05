@@ -5,14 +5,16 @@ require 'json'
 require 'ice_nine'
 require 'ice_nine/core_ext/object'
 require 'cayuga'
-require_relative 'factory_helper.rb'
+require 'cayuga/object/factory_helper_shared'
+require 'cayuga/object/factory_helper'
 
 module Cayuga
   module Object
     # Cayuga Object Factory
     class Factory
-      include Cayuga::Object::FactoryHelper
       include Tools::Loggable
+      include FactoryHelperShared
+      include FactoryHelper
 
       attr_reader :configuration_name, :logs_directory
 
@@ -82,16 +84,16 @@ module Cayuga
 
       private
 
-      attr_reader :configuration, :types, :instances
+      attr_reader :configuration, :types, :instances, :directories
 
       def initialize(config)
         @configuration =
           JSON.parse(File.read(config), symbolize_names: true).deep_freeze
-        @configuration_name = configuration[:configuration_name]
-        @logs_directory = configuration[:directories][:logs]
+        @configuration_name = primary_configuration(:configuration_name, type: String)
         setup_types
         @instances = {}
-        @directories = configuration[:directories].freeze
+        @directories = primary_configuration(:directories).freeze
+        @logs_directory = directories[:logs]
       end
 
     end

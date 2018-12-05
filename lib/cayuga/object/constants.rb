@@ -2,11 +2,14 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'cayuga'
+require 'cayuga/object/factory_helper_shared'
 
 module Cayuga
   module Object
     # noinspection RubyModuleAsSuperclassInspection
     class Constants < Singleton
+      include FactoryHelperShared
+
       def constant(constant)
         constants[constant.symbolize]
       end
@@ -21,10 +24,6 @@ module Cayuga
         files[constant.symbolize]
       end
 
-      def repository(constant)
-        repositories[constant.symbolize]
-      end
-
       private_class_method :new
 
       private
@@ -33,10 +32,9 @@ module Cayuga
 
       def initialize(factory, configuration)
         super
-        @constants = configuration[:constants]
-        @directories = configuration[:directories]
-        @files = configuration[:files]
-        @repositories = configuration[:repositories]
+        @constants = primary_configuration(:constants)
+        @directories = primary_configuration(:directories)
+        @files = primary_configuration(:files)
       end
 
     end
