@@ -2,7 +2,6 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'cayuga'
-require 'cayuga/object/factory_helper_shared'
 
 module Cayuga
   module Object
@@ -10,7 +9,6 @@ module Cayuga
     # Cayuga Object Logger
     # noinspection RubyModuleAsSuperclassInspection
     class Logger < Singleton
-      include FactoryHelperShared
 
       def generic_log_file(name)
         filename = name.stringify.filenamify('.log')

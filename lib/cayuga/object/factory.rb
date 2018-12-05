@@ -5,7 +5,6 @@ require 'json'
 require 'ice_nine'
 require 'ice_nine/core_ext/object'
 require 'cayuga'
-require 'cayuga/object/factory_helper_shared'
 require 'cayuga/object/factory_helper'
 
 module Cayuga
@@ -13,7 +12,6 @@ module Cayuga
     # Cayuga Object Factory
     class Factory
       include Tools::Loggable
-      include FactoryHelperShared
       include FactoryHelper
 
       attr_reader :configuration_name

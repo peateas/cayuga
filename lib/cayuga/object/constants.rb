@@ -2,14 +2,11 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'cayuga'
-require 'cayuga/object/factory_helper_shared'
 
 module Cayuga
   module Object
     # noinspection RubyModuleAsSuperclassInspection
     class Constants < Singleton
-      include FactoryHelperShared
-
       def constant(constant)
         constants[constant.symbolize]
       end
