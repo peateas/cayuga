@@ -32,9 +32,9 @@ module Cayuga
 
       def initialize(factory, configuration)
         super
-        @constants = primary_configuration(:constants)
-        @directories = primary_configuration(:directories)
-        @files = primary_configuration(:files)
+        @constants = configuration[:constants]
+        @directories = configuration[:directories]
+        @files = configuration[:files]
       end
 
     end

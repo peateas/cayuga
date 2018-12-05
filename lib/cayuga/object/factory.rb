@@ -16,7 +16,7 @@ module Cayuga
       include FactoryHelperShared
       include FactoryHelper
 
-      attr_reader :configuration_name, :logs_directory
+      attr_reader :configuration_name
 
       def logger
         @logger ||= self[Cayuga::Object::Logger]
@@ -84,16 +84,16 @@ module Cayuga
 
       private
 
-      attr_reader :configuration, :types, :instances, :directories
+      attr_reader :configuration, :types, :instances
 
       def initialize(config)
         @configuration =
           JSON.parse(File.read(config), symbolize_names: true).deep_freeze
-        @configuration_name = primary_configuration(:configuration_name, type: String)
+        @configuration_name = :configuration_name
         setup_types
         @instances = {}
-        @directories = primary_configuration(:directories).freeze
-        @logs_directory = directories[:logs]
+        setup_primary_configurations
+        log_missing_keys unless missing_keys.empty?
       end
 
     end

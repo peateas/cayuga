@@ -29,7 +29,7 @@ RSpec.describe 'cayuga object' do
         logger.log.info('extra log for exclusivity test')
         factory.log.info('extra log for exclusivity test')
         SemanticLogger.flush
-        records = tail(logger, instance.class).select do |record|
+        records = tail(logger.log_filename(instance.class)).select do |record|
           record =~ filter
         end
         case instance

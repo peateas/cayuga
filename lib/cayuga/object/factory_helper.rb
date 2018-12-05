@@ -8,11 +8,56 @@ module Cayuga
   module Object
     # Cayuga Object Factory Helper
     module FactoryHelper
+      attr_reader :_constants, :_directories, :_files
+      attr_reader :_logs_annotation_marker, :_logs_directory
+
       private
+
+      attr_reader :missing_keys
 
       OBJECTS = {
         singletons: %w[Cayuga::Object::Logger Cayuga::Object::Constants]
       }.deep_freeze
+
+      def log_missing_keys
+        logger
+        missing_keys.each do |key|
+          log.warn('missing key', key: key, configuration: configuration_name)
+        end
+      end
+
+      def setup_primary_configurations
+        @missing_keys = Set.new
+        @configuration_name = setup_constant(
+          configuration, :configuration_name, 'Missing Name'
+        )
+        setup_primary_keys
+        setup_log_configuration
+      end
+
+      def setup_primary_keys
+        @_constants = setup_constant(configuration, :constants, {}).deep_freeze
+        @_directories =
+          setup_constant(configuration, :directories, {}).deep_freeze
+        @_files = setup_constant(configuration, :files, {}).deep_freeze
+      end
+
+      def setup_log_configuration
+        @_logs_annotation_marker = setup_constant(
+          _constants, :log_annotation_marker, '-missing-marker'
+        ).freeze
+        @_logs_directory = setup_constant(_directories, :logs, 'logs').freeze
+      end
+
+      def setup_constant(source, key, default)
+        case source.key?(key)
+          when true
+            source[key]
+          else
+            @missing_keys.add(key)
+            default
+        end
+      end
 
       def setup_types
         @types = {}

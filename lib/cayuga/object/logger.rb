@@ -2,6 +2,7 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 require 'cayuga'
+require 'cayuga/object/factory_helper_shared'
 
 module Cayuga
   module Object
@@ -9,10 +10,11 @@ module Cayuga
     # Cayuga Object Logger
     # noinspection RubyModuleAsSuperclassInspection
     class Logger < Singleton
+      include FactoryHelperShared
 
       def generic_log_file(name)
         filename = name.stringify.filenamify('.log')
-        "#{factory.logs_directory}/#{filename}"
+        "#{factory._logs_directory}/#{filename}"
       end
 
       def log_names
@@ -46,10 +48,10 @@ module Cayuga
         unless log_log?(name)
           remove_any_orphan_appender(name)
           make_appender(name, filename, stream, filter, level)
+          logger.info('log created', name: name, annotation: fetch_annotation)
+          logger.debug('logs', log_names: log_names)
+          logger.debug('logs', count: SemanticLogger.appenders.count)
         end
-        logger.info('log created', name: name)
-        logger.debug('logs', log_names: log_names)
-        logger.debug('logs', count: SemanticLogger.appenders.count)
         log_filename(name)
       end
 
@@ -69,8 +71,7 @@ module Cayuga
       end
 
       def fetch_annotation
-        value = configuration[:constants][:log_annotation_marker]
-        value.nil? ? '' : value
+        factory._logs_annotation_marker
       end
 
       def create_logs
@@ -87,7 +88,7 @@ module Cayuga
       def make_appender(name, filename, stream, filter, level)
         if stream.nil?
           if filename.nil?
-            filename = factory.logs_directory + '/' + name.classify.log_file
+            filename = factory._logs_directory + '/' + name.classify.log_file
           end
           log = SemanticLogger.add_appender(file_name: filename, filter: filter)
         else
@@ -102,7 +103,11 @@ module Cayuga
       def remove_any_orphan_appender(name)
         return if log_log?(name)
         return unless log_appender_exists?(name)
-        logger.warn('log without registration', name: name)
+        logger.warn(
+          'log without registration',
+          name: name,
+          configuration: configuration_name
+        )
         logger.debug('log without registration', log: log_names)
         SemanticLogger.remove_appender(log_appender(name))
       end

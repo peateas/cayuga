@@ -14,10 +14,10 @@ RSpec.describe Cayuga::Object::Factory do
   end
 
   it 'should have logs directory' do
-    expect(factory).not_to have_attributes(logs_directory: nil)
-    expect(factory.logs_directory).to be_a String
-    expect(factory.logs_directory).not_to be_empty
-    expect(Dir).to exist(factory.logs_directory)
+    expect(factory).not_to have_attributes(_logs_directory: nil)
+    expect(factory._logs_directory).to be_a String
+    expect(factory._logs_directory).not_to be_empty
+    expect(Dir).to exist(factory._logs_directory)
   end
 
   it 'should have logger and constants' do

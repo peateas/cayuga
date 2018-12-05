@@ -10,6 +10,7 @@
     "Test2018::NamedObject"
   ],
   "constants": {
+    "log_annotation_marker": "",
     "test_constant": "test_constant"
   },
   "directories": {

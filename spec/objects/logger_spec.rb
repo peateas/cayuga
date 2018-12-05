@@ -41,12 +41,12 @@ RSpec.describe Cayuga::Object::Logger do
   it 'should be able to get tail of log' do
     subject.log.info('testing tail')
     SemanticLogger.flush
-    records = tail(subject, :main)
+    records = tail(logger.log_filename(:main))
     expect(records.size).to be > 0
   end
 
   it 'should have logs in the configured directory' do
-    directory = factory.logs_directory
+    directory = factory._logs_directory
     file = [directory, subject.class.filenamify(:log)].join('/')
     expect(subject[subject.class]).to be == file
     records = nil
