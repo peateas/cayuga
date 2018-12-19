@@ -18,7 +18,7 @@ module Cayuga
 
       def classify
         # noinspection RubyResolve
-        klass = Object.const_get(to_s.modulize)
+        klass = RootObject.const_get(to_s.modulize)
         raise NameError, "wrong class name '#{klass}'" unless klass.is_a?(Class)
         klass
       end

@@ -1,9 +1,6 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-#
-require 'cayuga'
-
 module Cayuga
   # noinspection RubyConstantNamingConvention
   RootObject = Object

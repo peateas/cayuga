@@ -36,6 +36,16 @@ module Cayuga
         instance
       end
 
+      def inspect
+        case name
+          when Hash
+            result = name.map { |key, value| "@#{key}=\"#{value}\"" }.join(' ')
+            "#<#{self.class.name}:#{object_id} #{result}>"
+          else
+            "#<#{self.class.name}:#{object_id} @name=\"#{name}\">"
+        end
+      end
+
       private
 
       def initialize(factory, configuration, name)
