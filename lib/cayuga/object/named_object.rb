@@ -6,6 +6,7 @@ module Cayuga
     # Named Object
     class NamedObject < Object
       attr_reader :name
+      alias object_name name
 
       def self.valid_name?(_factory, name)
         name != nil
@@ -37,12 +38,13 @@ module Cayuga
       end
 
       def inspect
-        case name
+        case object_name
           when Hash
-            result = name.map { |key, value| "@#{key}=\"#{value}\"" }.join(' ')
+            result = object_name.map { |key, value| "@#{key}=\"#{value}\"" }
+                                .join(' ')
             "#<#{self.class.name}:#{object_id} #{result}>"
           else
-            "#<#{self.class.name}:#{object_id} @name=\"#{name}\">"
+            "#<#{self.class.name}:#{object_id} @name=\"#{object_name}\">"
         end
       end
 

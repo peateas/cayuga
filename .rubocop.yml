@@ -13,6 +13,12 @@ Layout/EmptyLinesAroundModuleBody:
 Layout/EndAlignment:
   EnforcedStyleAlignWith:  start_of_line
 
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/MultilineCallIndentation:
+  EnforcedStyle: indented
+
 Layout/SpaceAroundOperators:
   Enabled:  false
 
@@ -24,7 +30,7 @@ Metrics/BlockLength:
 
 Metrics/MethodLength:
   Enabled:  true
-  Max: 15
+  Max: 25
 
 Style/CaseIndentation:
   Enabled:  false
