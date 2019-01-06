@@ -32,6 +32,21 @@ module Cayuga
         types[klass.symbolize]
       end
 
+      def registered_class?(klass)
+        types.key?(klass.symbolize)
+      end
+
+      def register_class(klass, type)
+        message = "'#{type}' must be object, singleton or named"
+        ok = %i[object singleton named].include? type.symbolize
+        raise ArgumentError, message unless ok
+        register_classes([klass], type)
+      end
+
+      def deregister_class(klass)
+        types.delete(klass.symbolize)
+      end
+
       def registered?(klass, name = nil)
         lookup_registered_instances(klass.symbolize, name) != nil
       end

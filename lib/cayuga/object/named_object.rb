@@ -5,8 +5,8 @@ module Cayuga
   module Object
     # Named Object
     class NamedObject < Object
-      attr_reader :name
-      alias object_name name
+      attr_reader :object_name
+      alias name object_name
 
       def self.valid_name?(_factory, name)
         name != nil
@@ -52,7 +52,7 @@ module Cayuga
 
       def initialize(factory, configuration, name)
         super(factory, configuration)
-        @name = name
+        @object_name = name
         # TO DO: alternative names
       end
 

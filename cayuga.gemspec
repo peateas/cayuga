@@ -36,7 +36,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'ice_nine', '~>0.11'
   spec.add_runtime_dependency 'semantic_logger', '~>4.3'
 
-  spec.add_development_dependency 'bundler', '~> 1.16'
+  spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'file-tail', '~>1.2'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
