@@ -20,6 +20,7 @@ module Cayuga
         # noinspection RubyResolve
         klass = RootObject.const_get(to_s.modulize)
         raise NameError, "wrong class name '#{klass}'" unless klass.is_a?(Class)
+
         klass
       end
 

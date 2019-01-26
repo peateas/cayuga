@@ -32,11 +32,13 @@ module Cayuga
 
       def standardize
         return self unless alternative?
+
         standardize_string(self)
       end
 
       def standardize_string(string)
         return string if string.empty?
+
         string =~ /^([^A-Za-z0-9])?([A-Za-z0-9]+)?(.*)$/
         my_matches = []
         (1..3).each do |i|

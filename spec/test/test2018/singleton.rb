@@ -7,3 +7,4 @@ module Test2018
   class Singleton < Cayuga::Object::Singleton
   end
 end
+

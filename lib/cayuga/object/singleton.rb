@@ -7,6 +7,7 @@ module Cayuga
     class Singleton < Object
       def self.create(factory, configuration)
         raise "#{stringify} already registered" if factory.registered?(self)
+
         factory.register(new(factory, configuration), self)
       end
 

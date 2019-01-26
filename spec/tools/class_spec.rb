@@ -1,7 +1,7 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-RSpec.describe Cayuga::Tools::Class, for_tools: true do
+RSpec.describe Cayuga::Tools::Class, :tools do
 
   it 'produces string, symbol and class versions of itself' do
     ToolInformationHelper::STRING_SYMBOL_CLASS_EXAMPLES.each do |example|

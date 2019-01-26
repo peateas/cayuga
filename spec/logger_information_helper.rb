@@ -6,6 +6,7 @@ require 'file-tail'
 module LoggerInformationHelper
   def verify_log_log(a_factory, name)
     return if a_factory.logger.log_log?(name)
+
     filter =
       case name
         when Class

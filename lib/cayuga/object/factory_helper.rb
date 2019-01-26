@@ -71,6 +71,7 @@ module Cayuga
 
       def register_classes(list, type)
         return if list.nil?
+
         list.each do |klass|
           types[klass.symbolize] = type
         end

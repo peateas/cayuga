@@ -40,6 +40,7 @@ module Cayuga
         message = "'#{type}' must be object, singleton or named"
         ok = %i[object singleton named].include? type.symbolize
         raise ArgumentError, message unless ok
+
         register_classes([klass], type)
       end
 
@@ -81,6 +82,7 @@ module Cayuga
       def release(klass, name = nil)
         key = klass.symbolize
         return unless registered?(key, name)
+
         type = type(key)
         case type
           when :singleton

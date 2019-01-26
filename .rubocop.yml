@@ -1,6 +1,9 @@
 Layout/AlignParameters:
   Enabled:  false
 
+Layout/CaseIndentation:
+  Enabled:  false
+
 Layout/EmptyLinesAroundBlockBody:
   Enabled:  false
 
@@ -16,9 +19,6 @@ Layout/EndAlignment:
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
-Layout/MultilineCallIndentation:
-  EnforcedStyle: indented
-
 Layout/SpaceAroundOperators:
   Enabled:  false
 
@@ -31,9 +31,6 @@ Metrics/BlockLength:
 Metrics/MethodLength:
   Enabled:  true
   Max: 25
-
-Style/CaseIndentation:
-  Enabled:  false
 
 Style/IfUnlessModifier:
   Enabled:  false

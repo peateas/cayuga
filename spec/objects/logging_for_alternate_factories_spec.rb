@@ -1,7 +1,7 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-RSpec.describe 'logging for alternate factories', for_alternate_factory: true do
+RSpec.describe 'logging for alternate factories', :alternate_factory do
   # noinspection RubyResolve
   let(:annotation) { alternate_constants[:log_annotation_marker] }
   let(:constants) { factory[Cayuga::Object::Constants] }

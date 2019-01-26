@@ -27,6 +27,7 @@ top = 2 ** 23
   now = Time.now
   elapsed = now - last
   next unless (elapsed > 5) && (now.sec % 5).zero?
+
   stats = "#{now}: #{format('%.6f', (i / 1e6))}" \
   ", #{format('%.2f', elapsed)}s" \
   ", #{format('%.2f', (now - start))}s" \

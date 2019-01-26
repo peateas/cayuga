@@ -12,3 +12,4 @@ RSpec.describe Cayuga::Object::Logger do
   specify 'factory object log levels can be configured in file'
 
 end
+

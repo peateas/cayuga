@@ -35,6 +35,7 @@ module Cayuga
         end
         count = all.count
         raise "More than one log with name #{name}" if count > 1
+
         count == 1 ? all[0] : nil
       end
 
@@ -100,7 +101,9 @@ module Cayuga
 
       def remove_any_orphan_appender(name)
         return if log_log?(name)
+
         return unless log_appender_exists?(name)
+
         logger.warn(
           'log without registration',
           name: name,

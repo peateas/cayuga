@@ -24,6 +24,7 @@ module Cayuga
         if factory.registered?(self, name)
           raise "#{stringify}[#{name}] already registered"
         end
+
         if primary?(name)
           primary = name
           alternate = nil
@@ -61,6 +62,7 @@ module Cayuga
         unless valid_name?(factory, name)
           raise "'#{self}['#{name}'] is not a valid #{self}"
         end
+
         # name valid
         # check alternate valid if exists
         unless alternate.nil?
