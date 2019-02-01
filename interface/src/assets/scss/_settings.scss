@@ -512,7 +512,7 @@ $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
-$maincontent-class: 'off-canvas-content';
+$maincontent-class: 'page';
 
 // 26. Orbit
 // ---------
@@ -859,8 +859,8 @@ $xy-grid: true;
 $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
-  small: 20px,
-  medium: 30px
+  small: 0px,
+  medium: 0px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

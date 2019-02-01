@@ -42,7 +42,7 @@ module Cayuga
         case object_name
           when Hash
             result = object_name.map { |key, value| "@#{key}=\"#{value}\"" }
-                                .join(' ')
+              .join(' ')
             "#<#{self.class.name}:#{object_id} #{result}>"
           else
             "#<#{self.class.name}:#{object_id} @name=\"#{object_name}\">"

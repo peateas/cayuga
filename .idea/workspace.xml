@@ -4,76 +4,16 @@
     <option name="FILTER_RESOLVED_ITEMS" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="add dynamic class registration as object, singleton or named object">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/.bowerrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/gulpfile.babel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/assets/img/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/assets/js/lib/foundation-explicit-pieces.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/assets/scss/_settings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/assets/scss/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/assets/scss/components/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/assets/scss/global/_typography.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/data/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/layouts/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/pages/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/partials/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/styleguide/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/src/styleguide/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/cayuga/interface.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/browser_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/interface/browser_testing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/interface/layout_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/test/test2018/sinatra_headless.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/test/test2018/sinatra_rack.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/test/test2018/sinatra_visualize.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/test/test2018/web.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/patrick.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/patrick.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="added clean foundation template, new rubocop">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cayuga.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/cayuga.gemspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cayuga.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cayuga.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/constants.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/constants.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/factory_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/factory_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/logger.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/logger.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/scss/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/interface/src/assets/scss/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/interface/src/assets/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/interface/src/pages/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/object.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/singleton.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/singleton.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/string.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/tools/string.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/symbol.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/tools/symbol.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/logger_information_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/logger_information_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/constants_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/constants_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/factory_classes_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/factory_classes_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/factory_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/factory_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/logging_for_alternate_factories_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/logging_for_alternate_factories_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/objects/named_object__spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/named_object__spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/test/test2018/logging_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2018/logging_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/test/test2018/named_object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2018/named_object.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/test/test2018/object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2018/object.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/test/test2018/singleton.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2018/singleton.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/tool_information_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tool_information_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/tools/class_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/class_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/tools/string_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/string_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/tools/symbol_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/symbol_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_script.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_script.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/interface/layout_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/interface/layout_spec.rb" afterDir="false" />
     </list>
     <list id="1da64f63-0574-4053-ad4b-06df3dfca8ec" name=".idea" comment="update workspace" />
     <ignored path="Gemfile.lock" />
@@ -108,76 +48,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/spec/interface/layout_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/src/layouts/default.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/test/test2018/logging_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="141">
+              <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interface/src/assets/js/app.js">
+        <entry file="file://$PROJECT_DIR$/lib/cayuga/object/named_object.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/src/pages/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/objects/logging_for_alternate_factories_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/logger_information_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="285">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -185,17 +68,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="192">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/cayuga/object/logger.rb">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.rubocop.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
+            <state relative-caret-position="221">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/node_modules/what-input/src/styles/index.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/src/pages/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
+              <folding>
+                <element signature="n#ul#0;n#aside#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#ul#0;n#aside#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#ul#0;n#article#0;n#main#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#ul#0;n#article#1;n#main#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#ul#0;n#aside#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#ul#0;n#aside#1;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#ul#0;n#aside#0;n#!!top" />
+                <element signature="n#ul#0;n#aside#1;n#!!top" />
+                <element signature="n#ul#0;n#aside#1;n#!!top" />
+                <element signature="n#ul#0;n#aside#4;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cayuga.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/watcherTasks.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/xy-grid/_frame.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -216,43 +149,51 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>registration</find>
-      <find>ini</find>
-      <find>missing configur</find>
-      <find>5</find>
-      <find>missing-</find>
-      <find>created</find>
-      <find>missing_key</find>
-      <find>type</find>
-      <find>for_al</find>
-      <find>for_tools</find>
-      <find>for_alternate_factory</find>
-      <find>for_browser</find>
-      <find>sett</find>
-      <find>grid-container</find>
-      <find>dropdown</find>
-      <find>dropdown menu</find>
-      <find>$primary-color</find>
-      <find>`</find>
-      <find>submenu</find>
-      <find>drop</find>
-      <find>$dropdownmenu-submenu-padding</find>
-      <find>menu</find>
-      <find>DropdownMenu</find>
       <find>radi</find>
       <find>primary</find>
       <find>nested</find>
       <find>top-area</find>
       <find>.button</find>
-      <find>button</find>
       <find>off</find>
+      <find>button</find>
+      <find>empty</find>
+      <find>on</find>
+      <find>list group</find>
+      <find>grid-x</find>
+      <find>xy-grid</find>
+      <find>font</find>
+      <find>break</find>
+      <find>off-canvas</find>
+      <find>push</find>
+      <find>grid</find>
+      <find>transform</find>
+      <find>is-open-left</find>
+      <find>is-open</find>
+      <find>translateX</find>
+      <find>position</find>
+      <find>left area</find>
+      <find>gutter</find>
+      <find>global-lineheight</find>
+      <find>right-areas</find>
+      <find>aside</find>
+      <find>xy-cell-block</find>
+      <find>$unit</find>
+      <find>list-group</find>
     </findStrings>
     <replaceStrings>
       <replace>#</replace>
       <replace>symbol</replace>
       <replace>klass</replace>
       <replace>target</replace>
+      <replace>of</replace>
+      <replace>right-areas</replace>
+      <replace>Right Area</replace>
+      <replace>off</replace>
+      <replace>right-area</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\peate\OneDrive\IdeaProjects\cayuga809</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -266,20 +207,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/objects/register_classes_spec.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/version.rb" />
-        <option value="$PROJECT_DIR$/spec/test/test2018/sinatra_poltergeist.rb" />
-        <option value="$PROJECT_DIR$/spec/test/test2018/sinatra_headless_chrome.rb" />
-        <option value="$PROJECT_DIR$/cayuga.gemspec" />
-        <option value="$PROJECT_DIR$/spec/tools/symbol_spec.rb" />
-        <option value="$PROJECT_DIR$/interface/index.html" />
-        <option value="$PROJECT_DIR$/spec/interface/browser_testing_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/interface/dist/assets/js/app.js" />
         <option value="$PROJECT_DIR$/interface/dist/space.html" />
         <option value="$PROJECT_DIR$/interface/src/pages/space.html" />
-        <option value="$PROJECT_DIR$/interface/src/pages/test.html" />
-        <option value="$PROJECT_DIR$/interface/src/assets/scss/_settings.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.rubocop.yml" />
         <option value="$PROJECT_DIR$/spec/browser_helper.rb" />
@@ -291,7 +221,6 @@
         <option value="$PROJECT_DIR$/lib/cayuga/object/factory_helper.rb" />
         <option value="$PROJECT_DIR$/spec/objects/factory_spec.rb" />
         <option value="$PROJECT_DIR$/lib/cayuga/interface.rb" />
-        <option value="$PROJECT_DIR$/spec/interface/layout_spec.rb" />
         <option value="$PROJECT_DIR$/spec/test/test2018/web.rb" />
         <option value="$PROJECT_DIR$/spec/tool_information_helper.rb" />
         <option value="$PROJECT_DIR$/test_script.rb" />
@@ -307,16 +236,28 @@
         <option value="$PROJECT_DIR$/lib/cayuga/object/object.rb" />
         <option value="$PROJECT_DIR$/spec/objects/named_object__spec.rb" />
         <option value="$PROJECT_DIR$/spec/test/test2018/named_object.rb" />
-        <option value="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" />
         <option value="$PROJECT_DIR$/spec/test/test2018/logging_test.rb" />
         <option value="$PROJECT_DIR$/spec/objects/logging_for_alternate_factories_spec.rb" />
         <option value="$PROJECT_DIR$/lib/cayuga/object/logger.rb" />
         <option value="$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb" />
         <option value="$PROJECT_DIR$/spec/logger_information_helper.rb" />
-        <option value="$PROJECT_DIR$/interface/src/assets/scss/app.scss" />
-        <option value="$PROJECT_DIR$/interface/src/layouts/default.html" />
-        <option value="$PROJECT_DIR$/interface/src/pages/index.html" />
         <option value="$PROJECT_DIR$/interface/src/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/interface/dist/index.html" />
+        <option value="$PROJECT_DIR$/interface/src/assets/scss/components/_aside.scss" />
+        <option value="$PROJECT_DIR$/interface/src/layouts/default.html" />
+        <option value="$PROJECT_DIR$/interface/src/assets/scss/components/_list_group.scss" />
+        <option value="$PROJECT_DIR$/interface/src/assets/scss/components/building-blocks/_list-group.scss" />
+        <option value="$PROJECT_DIR$/interface/src/partials/building-blocks/list-group.html" />
+        <option value="$PROJECT_DIR$/interface/src/assets/scss/app.scss.copy" />
+        <option value="$PROJECT_DIR$/interface/src/assets/scss/_settings.scss" />
+        <option value="$PROJECT_DIR$/interface/dist/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/interface/node_modules/foundation-sites/js/foundation.offcanvas.js" />
+        <option value="$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/components/_off-canvas.scss" />
+        <option value="$PROJECT_DIR$/interface/src/pages/test.html" />
+        <option value="$PROJECT_DIR$/interface/src/assets/scss/app.scss" />
+        <option value="$PROJECT_DIR$/interface/src/pages/index.html" />
+        <option value="$PROJECT_DIR$/spec/interface/layout_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" />
       </list>
     </option>
   </component>
@@ -327,8 +268,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1435" />
-    <option name="height" value="1040" />
+    <option name="width" value="1392" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -337,6 +278,102 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
+              <item name="object" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cayuga809" type="58d84e3e:PackageViewProjectNode" />
+              <item name="cayuga" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -365,144 +402,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cayuga809" type="58d84e3e:PackageViewProjectNode" />
-              <item name="cayuga" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
-              <item name="object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="test2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga809" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -510,7 +409,8 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SearchEverywhereHistoryKey" value="rake&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/.idea/.rakeTasks&#10;tail&#9;null&#9;null&#10;File::Tail&#9;null&#9;null&#10;file-tail&#9;FILE&#9;file://C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/file-tail-1.2.0/lib/file-tail.rb&#10;file&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/Gemfile.lock&#10;simple&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/representation/simple.rb&#10;res&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally/repository_spec.rb&#10;repo&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/repository.rb&#10;nameo&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/named_object.rb&#10;con&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/constants.rb&#10;constants_spec.rb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/objects/constants_spec.rb&#10;taih&#9;null&#9;null&#10;factory&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/factory.rb&#10;fs&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/objects/factory_spec.rb&#10;tih&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally_information_helper.rb&#10;nt&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/name_tracker.rb&#10;nts&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally/name_tracker_spec.rb&#10;facto&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/factory.rb&#10;repos&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tally/repository.rb&#10;big&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tally/big_tally_spec.rb&#10;inter&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/tools/integer.rb&#10;integer.&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/tools/integer_spec.rb&#10;logger&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/logger_information_helper.rb&#10;lrb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/logger.rb&#10;object&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/object.rb&#10;object.rb&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/object.rb&#10;add_appender&#9;null&#9;null&#10;Cayuga::Object&#9;null&#9;null&#10;*.log&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/development.log&#10;ls&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/spec/logger_spec.rb&#10;Test&#9;null&#9;null&#10;constants&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/lib/cayuga/object/constants.rb&#10;log&#9;FILE&#9;file://C:/Users/peate/OneDrive/IdeaProjects/cayuga809/test2018#logging_test.log" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../foundation-test" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meditate" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -524,22 +424,22 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\interface" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\web" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test\test2018" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\interface" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib\cayuga\object" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test\configuration" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\tally" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\interface\src\assets\scss" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\interface" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\web" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test\test2018" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -599,7 +499,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All specs in interface: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="All specs in interface: cayuga (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <module name="cayuga" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/interface" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/interface" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run spec 'layout_spec': cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="cayuga" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -612,12 +542,12 @@
       </envs>
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/spec/interface" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/interface/layout_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
@@ -655,37 +585,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="browser testing: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <module name="cayuga" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/interface/browser_testing_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="browser testing" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="interface should have areas: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="interface should have lists: cayuga" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="cayuga" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -702,7 +602,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/interface/layout_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="interface should have areas" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="interface should have lists" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -747,18 +647,18 @@
     </configuration>
     <list>
       <item itemvalue="RSpec.All specs in cayuga809: cayuga" />
-      <item itemvalue="RSpec.browser testing: cayuga" />
+      <item itemvalue="RSpec.All specs in interface: cayuga (1)" />
+      <item itemvalue="RSpec.Run spec 'layout_spec': cayuga" />
+      <item itemvalue="RSpec.interface should have lists: cayuga" />
       <item itemvalue="RSpec.interface: cayuga" />
-      <item itemvalue="RSpec.interface should have areas: cayuga" />
-      <item itemvalue="RSpec.All specs in interface: cayuga" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="RSpec.All specs in cayuga809: cayuga" />
-        <item itemvalue="RSpec.All specs in interface: cayuga" />
-        <item itemvalue="RSpec.interface should have areas: cayuga" />
         <item itemvalue="RSpec.interface: cayuga" />
-        <item itemvalue="RSpec.browser testing: cayuga" />
+        <item itemvalue="RSpec.Run spec 'layout_spec': cayuga" />
+        <item itemvalue="RSpec.interface should have lists: cayuga" />
+        <item itemvalue="RSpec.All specs in interface: cayuga (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -858,7 +758,8 @@
       <workItem from="1548265916894" duration="14912000" />
       <workItem from="1548282451008" duration="31388000" />
       <workItem from="1548528411586" duration="3117000" />
-      <workItem from="1548531619587" duration="4764000" />
+      <workItem from="1548531619587" duration="20457000" />
+      <workItem from="1548617476235" duration="80417000" />
     </task>
     <task id="LOCAL-00001" summary="safety commit">
       <created>1539927767971</created>
@@ -1140,43 +1041,50 @@
       <option name="project" value="LOCAL" />
       <updated>1546785249497</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="added clean foundation template, new rubocop">
+      <created>1548542414870</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1548542414870</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.24 at 13h 54m 59s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="interface__cayuga - 2019.01.31 at 11h 00m 07s.xml">
+      <configuration name="interface: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.24 at 13h 55m 54s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="interface__cayuga - 2019.01.31 at 11h 02m 56s.xml">
+      <configuration name="interface: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.24 at 13h 56m 49s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="interface__cayuga - 2019.01.31 at 11h 06m 33s.xml">
+      <configuration name="interface: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.24 at 21h 02m 22s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="interface__cayuga - 2019.01.31 at 11h 08m 28s.xml">
+      <configuration name="interface: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.24 at 21h 02m 48s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="interface__cayuga - 2019.01.31 at 11h 10m 23s.xml">
+      <configuration name="interface: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.26 at 10h 19m 17s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="interface__cayuga - 2019.01.31 at 11h 23m 04s.xml">
+      <configuration name="interface: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.26 at 10h 19m 52s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="interface__cayuga - 2019.01.31 at 15h 42m 15s.xml">
+      <configuration name="interface: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_interface__cayuga - 2019.01.26 at 10h 47m 23s.xml">
-      <configuration name="All specs in interface: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.01.26 at 11h 08m 28s.xml">
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.02.01 at 08h 31m 10s.xml">
       <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.01.26 at 11h 17m 38s.xml">
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.02.01 at 08h 33m 41s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.02.01 at 08h 35m 32s.xml">
       <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="544956000" />
+    <option name="totallyTimeSpent" value="641066000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1192,26 +1100,26 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44555873" visible="true" weight="0.19395973" />
-      <window_info id="Structure" order="1" sideWeight="0.5544413" side_tool="true" weight="0.2569061" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43174604" visible="true" weight="0.19060403" />
+      <window_info id="Structure" order="1" sideWeight="0.568254" side_tool="true" weight="0.19127516" />
       <window_info id="Learn" order="2" weight="0.3295302" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49328858" weight="0.32719547" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49328858" weight="0.32577905" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49731544" weight="0.6676218" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48850045" weight="0.55382437" />
-      <window_info anchor="bottom" x="23" y="198" width="1490" height="427" id="Debug" order="4" sideWeight="0.49597314" weight="0.6174785" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48850045" weight="0.56373936" />
+      <window_info anchor="bottom" x="23" y="198" width="1490" height="427" id="Debug" order="4" sideWeight="0.49597314" weight="0.617052" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4899329" weight="0.31161472" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.4966443" visible="true" weight="0.5226629" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5067114" side_tool="true" weight="0.32719547" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49798658" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4908088" weight="0.30878186" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50919116" side_tool="true" weight="0.31069365" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49798658" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.3295129" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4966443" weight="0.51133144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1219,25 +1127,26 @@
       <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44555873" visible="true" weight="0.2569061" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5544413" side_tool="true" visible="true" weight="0.2569061" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43396226" visible="true" weight="0.27065527" />
+      <window_info id="Structure" order="1" sideWeight="0.5660377" side_tool="true" weight="0.2711397" />
       <window_info id="Learn" order="2" weight="0.3295302" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49328858" weight="0.32658958" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49731544" weight="0.66855526" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48926175" weight="0.56160456" />
-      <window_info anchor="bottom" x="23" y="198" width="1490" height="427" id="Debug" order="4" sideWeight="0.49597314" weight="0.6175637" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49731544" weight="0.6676218" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48850045" weight="0.5650289" />
+      <window_info anchor="bottom" x="23" y="198" width="1490" height="427" id="Debug" order="4" sideWeight="0.49597314" weight="0.617052" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4919463" weight="0.6833811" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4966443" weight="0.52549577" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5080537" side_tool="true" weight="0.6614731" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4986577" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4908088" visible="true" weight="0.31069365" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4966443" weight="0.5226629" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50919116" side_tool="true" weight="0.31069365" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49798658" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.3295129" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1299,8 +1208,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
-    <MESSAGE value="added factory" />
     <MESSAGE value="logger (+ partial constants)" />
     <MESSAGE value="Gem Version 0.0.2" />
     <MESSAGE value="refactoring:  Object Singleton NamedObject" />
@@ -1325,7 +1232,8 @@
     <MESSAGE value="changed classify to be root object, added simple inspect for named objects" />
     <MESSAGE value="added object_name" />
     <MESSAGE value="add dynamic class registration as object, singleton or named object" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dynamic class registration as object, singleton or named object" />
+    <MESSAGE value="added clean foundation template, new rubocop" />
+    <option name="LAST_COMMIT_MESSAGE" value="added clean foundation template, new rubocop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1397,8 +1305,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/interface/layout_spec.rb</url>
-          <line>16</line>
+          <line>34</line>
           <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/interface/layout_spec.rb</url>
+          <line>43</line>
+          <option name="timeStamp" value="300" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1483,6 +1396,16 @@ end</expression-string>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>subject.find(area)</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>subject(area)</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>subject.page
 
 end</expression-string>
@@ -1523,320 +1446,13 @@ end</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>factory.logger</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>factory.constants</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>subject.constants</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/components/_menu-icon.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="469" column="22" selection-start-line="469" selection-start-column="22" selection-end-line="469" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/src/pages/space.html" />
-    <entry file="file://$PROJECT_DIR$/interface/src/pages/test.html" />
-    <entry file="file://$PROJECT_DIR$/interface/src/assets/js/lib/foundation-explicit-pieces.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="76" column="36" lean-forward="true" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/interface/browser_testing_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/src/styleguide/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/dist/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7021">
-          <caret line="413" selection-start-line="413" selection-end-line="417" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.rubocop.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/_settings.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="787" column="23" selection-start-line="787" selection-start-column="23" selection-end-line="787" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/browser_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tools/class_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/constants.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/constants_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/factory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/factory_classes_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/factory_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/factory_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/interface.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/interface/layout_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/web.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tool_information_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_script.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/sinatra_rack.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/sinatra_visualize.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/symbol.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/tools/string_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/tools/string.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/singleton.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/singleton.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/sinatra_headless.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/named_object__spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/named_object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/named_object.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/logging_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/logging_for_alternate_factories_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/logger.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/objects/logger_configuration_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/logger_information_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1847,37 +1463,328 @@ end</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/_motion-ui.css.scss">
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/_motion-ui.css.scss" />
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/assets/foundation-rtl.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/app.scss">
+    <entry file="file://$PROJECT_DIR$/interface/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="289">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/components/_accordion.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="139" column="7" selection-start-line="139" selection-start-column="7" selection-end-line="139" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/components/_aside.scss" />
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/global/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/foundation.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/components/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/CHANGELOG.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/.browserslistrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/dist/js/foundation.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="496" lean-forward="true" selection-start-line="496" selection-end-line="496" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/logger_information_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-116">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/components/_list_group.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/components/building-blocks/_list-group.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/dist/css/foundation-prototype.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="859" lean-forward="true" selection-start-line="859" selection-end-line="859" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/util/_breakpoint.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/src/layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/xy-grid/_gutters.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/xy-grid/_cell.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/dist/assets/js/app.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret column="643619" selection-start-column="643607" selection-end-column="643619" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/dist/css/foundation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="4629" selection-start-line="4629" selection-end-line="4629" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/components/_off-canvas.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="309" column="7" lean-forward="true" selection-start-line="309" selection-start-column="7" selection-end-line="309" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/dist/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="4616" column="9" lean-forward="true" selection-start-line="4616" selection-start-column="9" selection-end-line="4616" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/js/foundation.positionable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/js/foundation.offcanvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/util/_flex.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/util/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/docs/assets/scss/docs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="287" column="13" lean-forward="true" selection-start-line="287" selection-start-column="13" selection-end-line="287" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/components/_menu-icon.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/_settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="436" column="38" selection-start-line="436" selection-start-column="21" selection-end-line="436" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/xy-grid/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/xy-grid/_classes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="374" column="26" selection-start-line="374" selection-start-column="13" selection-end-line="374" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/what-input/src/markup/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/what-input/src/styles/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/what-input/src/styles/index.scss">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/src/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="111" selection-start-line="100" selection-end-line="111" />
+          <folding>
+            <element signature="n#ul#0;n#aside#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#article#0;n#div#0;n#main#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#article#1;n#div#0;n#main#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#main#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#2;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#!!top" />
+            <element signature="n#ul#0;n#aside#2;n#!!top" />
+            <element signature="e#3633#3640#1" expanded="true" />
+            <element signature="n#ul#0;n#aside#3;n#!!top" />
+            <element signature="n#ul#0;n#aside#4;n#!!top" />
+            <element signature="n#ul#0;n#aside#5;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/src/assets/js/app.js">
+    <entry file="file://$PROJECT_DIR$/interface/node_modules/foundation-sites/scss/xy-grid/_frame.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="19" selection-end-line="19" />
+        <state relative-caret-position="83">
+          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/partials/building-blocks/list-group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cayuga.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/app.scss.copy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.rubocop.yml.save">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.rubocop.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/watcherTasks.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/src/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="166" column="16" selection-start-line="166" selection-start-column="16" selection-end-line="166" selection-end-column="16" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="n#ul#0;n#aside#0;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#article#0;n#main#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#article#1;n#main#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#0;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#!!top" />
+            <element signature="n#ul#0;n#aside#1;n#!!top" />
+            <element signature="n#ul#0;n#aside#4;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/interface/layout_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/object/named_object.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
@@ -1970,6 +1877,7 @@ end</expression-string>
       </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
+          <last-edited>Target Files</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1977,6 +1885,9 @@ end</expression-string>
               </list>
             </option>
           </splitter-proportions>
+          <order>
+            <scope name="Target Files" />
+          </order>
         </settings>
       </state>
     </states>

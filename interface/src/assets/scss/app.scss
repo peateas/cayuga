@@ -64,3 +64,110 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// start
+body {
+  height: 90vh;
+  margin: 5vh auto;
+  padding: 0;
+  border: solid beige 1vh;
+  max-width: 1000px;
+  width: 90vw;
+
+  div.page {
+    @include off-canvas-content;
+    @include xy-grid-container;
+    border: solid blue 1vh;
+    height: 100%;
+
+    div.page-grid {
+      @include xy-grid($direction: horizontal, $wrap: false);
+      @include xy-grid-frame;
+      border: solid orange 1vh;
+      width: 100%;
+      height: 100%;
+
+      main {
+        @include xy-cell(8, $gutter-output: false);
+        @include breakpoint(medium) {
+          @include xy-cell(38%, $gutter-output: false);
+        }
+        @include xy-cell-block;
+        border: solid green 1vh;
+      }
+
+      div.left {
+        @include xy-cell(2, $gutter-output: false);
+        @include breakpoint(medium) {
+          @include xy-cell(31%, $gutter-output: false);
+        }
+        @include xy-cell-block;
+        border: solid yellowgreen 1vh;
+      }
+
+      div.right {
+        @include xy-cell(2, $gutter-output: false);
+        @include breakpoint(medium) {
+          @include xy-cell(31%, $gutter-output: false);
+        }
+        @include xy-cell-block;
+        border: solid yellowgreen 1vh;
+      }
+
+      div nav {
+        @include show-for-only(small);
+        padding: 0;
+        margin: 0;
+
+        div {
+          text-align: center;
+          padding: 1vh 0;
+          margin: 0;
+
+          button.aside {
+            @include hamburger();
+          }
+
+        }
+      }
+
+
+    }
+  }
+}
+
+.area {
+  border: solid darkgrey 1vh;
+  margin: 1vh;
+  padding: 1vh 1vh 0;
+}
+
+main article {
+  @extend .area;
+}
+
+aside.area-on {
+  @include show-for(medium);
+  //@include xy-cell-block;
+  @extend .area;
+  //height: calc(100% - 2vh);
+}
+
+aside.area-off {
+  @include off-canvas-base;
+  @extend .area;
+  margin: 6vh 0;
+  padding: 2vh;
+}
+
+aside.left-area-off {
+  @include off-canvas-position($position: left);
+  @extend aside.area-off;
+  height:  88vh;
+}
+
+aside.right-area-off {
+  @include off-canvas-position($position: right);
+  @extend aside.area-off;
+  height: 88vh;
+}
