@@ -18,6 +18,7 @@
     "logs": "spec/test/logs"
   },
   "files": {
-    "test_file": "test_file"
+    "test_file": "test_file",
+    "interface_test_lists": "spec/test/configuration/interface_test_lists.json"
   }
 }

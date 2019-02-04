@@ -1,0 +1,53 @@
+{
+  "names": {
+    "roman": [
+      "Julius",
+      "August",
+      "Brutus"
+    ],
+    "christian": [
+      "Peter",
+      "Paul",
+      "Mary"
+    ],
+    "political": [
+      "winston",
+      "josef",
+      "franklin"
+    ]
+  },
+  "numbers": {
+    "spanish": [
+      "uno",
+      "dos",
+      "tres"
+    ],
+    "icelandic": [
+      "einn",
+      "tveir",
+      "thrir"
+    ],
+    "mandarin": [
+      "yi",
+      "er",
+      "san"
+    ]
+  },
+  "letters": {
+    "greek": [
+      "alpha",
+      "beta",
+      "gamma"
+    ],
+    "hebrew": [
+      "alef",
+      "bet",
+      "gimel"
+    ],
+    "runes": [
+      "asch",
+      "birith",
+      "khen"
+    ]
+  }
+}

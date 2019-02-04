@@ -14,6 +14,6 @@ require('foundation-sites');
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-
 // noinspection JSUnresolvedVariable
 $(document).foundation();
+

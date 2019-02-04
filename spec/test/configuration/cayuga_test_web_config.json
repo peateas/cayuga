@@ -1,0 +1,18 @@
+{
+  "configuration_name": "Test Web Configuration for Model 2018 Factory",
+  "object_classes": [
+  ],
+  "singleton_classes": [
+  ],
+  "named_object_classes": [
+  ],
+  "constants": {
+    "log_annotation_marker": "web"
+  },
+  "directories": {
+    "logs": "spec/test/logs"
+  },
+  "files": {
+    "interface_test_lists": "spec/test/configuration/interface_test_lists.json"
+  }
+}

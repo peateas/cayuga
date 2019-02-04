@@ -34,7 +34,8 @@ Metrics/AbcSize:
   Max: 15
 
 Metrics/BlockLength:
-  ExcludedMethods: [ RSpec.describe ]
+  Max: 30
+  ExcludedMethods: [ RSpec.describe, Specification.new]
 
 Metrics/MethodLength:
   Enabled:  true

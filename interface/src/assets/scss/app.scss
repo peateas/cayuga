@@ -74,13 +74,13 @@ body {
   max-width: 1000px;
   width: 90vw;
 
-  div.page {
+  div.canvas-on {
     @include off-canvas-content;
     @include xy-grid-container;
     border: solid blue 1vh;
     height: 100%;
 
-    div.page-grid {
+    div.page-on {
       @include xy-grid($direction: horizontal, $wrap: false);
       @include xy-grid-frame;
       border: solid orange 1vh;
@@ -148,9 +148,7 @@ main article {
 
 aside.area-on {
   @include show-for(medium);
-  //@include xy-cell-block;
   @extend .area;
-  //height: calc(100% - 2vh);
 }
 
 aside.area-off {

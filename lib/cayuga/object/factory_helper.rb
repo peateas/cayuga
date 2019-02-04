@@ -87,7 +87,7 @@ module Cayuga
 
       def generate_registration_errors(klass, name, key, type)
         unless lookup_registered_instances(key, name).nil?
-          value = name.nil? ? klass.string : "#{klass.string}[#{name}]"
+          value = name.nil? ? klass.stringify : "#{klass.string}[#{name}]"
           raise "instance for #{value} already registered}"
         end
         types = %i[singleton named]
