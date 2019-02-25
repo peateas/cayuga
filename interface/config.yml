@@ -18,7 +18,7 @@ UNCSS_OPTIONS:
 
 # Gulp will reference these paths when it copies files
 PATHS:
-  # Path to dist folder"
+  # Path to dist folder
   dist: "dist"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
@@ -30,5 +30,5 @@ PATHS:
     - "node_modules/motion-ui/src"
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
-    - "src/assets/js/index.js"
     - "src/assets/js/app.js"
+    - "src/assets/js/index.js"
