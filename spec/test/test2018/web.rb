@@ -10,7 +10,6 @@ module Test2018
       config = 'spec/test/configuration/cayuga_test_web_config.json'
       factory = Cayuga::Object::Factory.new(config)
       folder = File.expand_path('interface/dist')
-      puts folder
       set public_folder: folder
       set factory: factory
       factory[Cayuga::Object::Logger]
