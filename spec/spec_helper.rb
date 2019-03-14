@@ -4,7 +4,6 @@ require 'factory_information_helper'
 require 'logger_information_helper'
 require 'tool_information_helper'
 require 'alternate_factory_helper'
-require 'browser_helper'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -30,9 +29,8 @@ RSpec.configure do |config|
   # noinspection RubyResolve
   config.include(AlternateFactoryHelper, :alternate_factory)
   # noinspection RubyResolve
-  config.include(BrowserHelper, :browser)
 
-  config.filter_run_excluding :slow
+  # config.filter_run_excluding :slow
 
 end
 

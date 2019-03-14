@@ -10,11 +10,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="minor changes">
-      <change afterPath="$PROJECT_DIR$/logs/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/test/logs/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/test/logs/alternate/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/test/logs/web/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/.bowerrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/gulpfile.babel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/img/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/js/lib/foundation-explicit-pieces.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/js/lib/sections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/scss/_settings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/scss/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/scss/components/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/assets/scss/global/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/data/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/partials/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/styleguide/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/src/styleguide/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga/interface.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_categories_810.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_patrick_810.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_relations_810.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_time_and_locations_810.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_universe_810.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/browser_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/interface/browser_testing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/interface/layout_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/sinatra_headless.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/sinatra_rack.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/sinatra_visualize.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/web.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_category_reports_2018.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_relation_reports_2018.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_things_reports_2018.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_script.rb" beforeDir="false" />
     </list>
     <list id="1da64f63-0574-4053-ad4b-06df3dfca8ec" name=".idea" comment="update workspace" />
     <ignored path="Gemfile.lock" />
@@ -47,7 +91,60 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/cayuga_spec.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/factory_information_helper.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/cayuga/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/cayuga.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cayuga.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="47" selection-start-line="34" selection-start-column="1" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,14 +211,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/interface/gulpfile.babel.js" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/interface/src/assets/scss/_settings.scss" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/test/test2018/sinatra_rack.rb" />
         <option value="$PROJECT_DIR$/spec/test/test2018/sinatra_visualize.rb" />
         <option value="$PROJECT_DIR$/lib/cayuga/tools/symbol.rb" />
         <option value="$PROJECT_DIR$/spec/tools/string_spec.rb" />
@@ -164,7 +258,6 @@
         <option value="$PROJECT_DIR$/interface/dist/index.html" />
         <option value="$PROJECT_DIR$/interface/src/pages/index.html" />
         <option value="$PROJECT_DIR$/interface/src/assets/js/index.js" />
-        <option value="$PROJECT_DIR$/cayuga.gemspec" />
         <option value="$PROJECT_DIR$/../.rubocop.yml" />
         <option value="$PROJECT_DIR$/spec/interface/layout_spec.rb" />
         <option value="$PROJECT_DIR$/interface/src/assets/js/lib/sections.js" />
@@ -172,6 +265,8 @@
         <option value="$PROJECT_DIR$/spec/test/test2018/web.rb" />
         <option value="$PROJECT_DIR$/spec/test/configuration/cayuga_test_web_config.json" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/cayuga.gemspec" />
+        <option value="$PROJECT_DIR$/lib/cayuga/version.rb" />
       </list>
     </option>
   </component>
@@ -192,6 +287,42 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga-903" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga-903" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga-903" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="cayuga" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga-903" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cayuga-903" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -215,70 +346,6 @@
               <item name="cayuga" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="interface" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga-902" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga-902" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga-902" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga-902" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga-902" type="462c0819:PsiDirectoryNode" />
-              <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cayuga-902" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="semantic_logger (v4.3.1, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="semantic_logger (v4.3.1, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cayuga" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="semantic_logger (v4.3.1, ruby-2.4.4-p296) [gem]" type="70bed36:NamedLibraryElementNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="semantic_logger" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,7 +377,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -348,7 +415,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.All specs in spec: cayuga">
+  <component name="RunManager" selected="RSpec.All specs in cayuga809: cayuga">
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -511,16 +578,16 @@
     </configuration>
     <list>
       <item itemvalue="RSpec.All specs in cayuga809: cayuga" />
-      <item itemvalue="Ruby.web" />
-      <item itemvalue="Ruby.cayuga" />
       <item itemvalue="RSpec.All specs in spec: cayuga" />
       <item itemvalue="RSpec.cayuga object should only log messages from themselves in its own logs: cayuga" />
+      <item itemvalue="Ruby.web" />
+      <item itemvalue="Ruby.cayuga" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.All specs in cayuga809: cayuga" />
         <item itemvalue="RSpec.All specs in spec: cayuga" />
         <item itemvalue="RSpec.cayuga object should only log messages from themselves in its own logs: cayuga" />
-        <item itemvalue="RSpec.All specs in cayuga809: cayuga" />
         <item itemvalue="Ruby.web" />
         <item itemvalue="Ruby.cayuga" />
       </list>
@@ -633,6 +700,7 @@
       <workItem from="1551124146612" duration="338000" />
       <workItem from="1551124809446" duration="118000" />
       <workItem from="1551125830168" duration="9075000" />
+      <workItem from="1552552754491" duration="4305000" />
     </task>
     <task id="LOCAL-00001" summary="safety commit">
       <created>1539927767971</created>
@@ -946,39 +1014,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 17m 28s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 22m 05s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 22m 10s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 26m 13s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 40m 50s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 50m 41s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 51m 13s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="All_specs_in_spec__cayuga - 2019.02.25 at 15h 53m 56s.xml">
-      <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="All_specs_in_spec__cayuga - 2019.03.09 at 04h 00m 24s.xml">
       <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
     <history-entry file="All_specs_in_spec__cayuga - 2019.03.09 at 04h 01m 21s.xml">
       <configuration name="All specs in spec: cayuga" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 09h 40m 01s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 09h 48m 22s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 09h 49m 35s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 09h 53m 47s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 09h 54m 14s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 09h 54m 30s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 11h 05m 03s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="All_specs_in_cayuga809__cayuga - 2019.03.14 at 11h 46m 37s.xml">
+      <configuration name="All specs in cayuga809: cayuga" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="745814000" />
+    <option name="totallyTimeSpent" value="750119000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -994,26 +1062,26 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43086818" visible="true" weight="0.22013423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.43086818" visible="true" weight="0.22348994" />
       <window_info id="Structure" order="1" sideWeight="0.56913185" side_tool="true" weight="0.19261745" />
       <window_info id="Learn" order="2" weight="0.3295302" />
       <window_info id="Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49190646" weight="0.32294616" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.49190646" weight="0.32152975" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49731544" weight="0.66618496" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48830935" weight="0.55807364" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48791945" weight="0.55807364" />
       <window_info anchor="bottom" x="23" y="198" width="1490" height="427" id="Debug" order="4" sideWeight="0.49597314" weight="0.61416185" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49274048" weight="0.3367052" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5116907" side_tool="true" visible="true" weight="0.55807364" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51208055" side_tool="true" weight="0.55807364" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49731544" weight="0.32803467" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="13" weight="0.3295129" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4966443" weight="0.5" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4966443" visible="true" weight="0.5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1153,11 +1221,6 @@
           <option name="timeStamp" value="234" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/test/test2018/web.rb</url>
-          <line>41</line>
-          <option name="timeStamp" value="305" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb</url>
           <line>27</line>
           <option name="timeStamp" value="325" />
@@ -1282,65 +1345,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interface2/src/assets/js/app.js" />
-    <entry file="file://$PROJECT_DIR$/interface2/src/assets/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/interface2/src/pages/index.html" />
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/copyright/copyright.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.rubocop.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/alternate/cayuga__object__constants.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/cayuga__object__factory.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/test2018__named_object.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/test2018__logging_test.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/cayuga__object__logger.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="85">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/objects/logger_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/main.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factory_information_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test/logs/main.log" />
     <entry file="file://$PROJECT_DIR$/spec/test/configuration/empty_factory_config.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1355,20 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/test2018/web.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/interface/layout_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
@@ -1456,9 +1447,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/test2018__singleton.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test/logs/test2018__singleton.log" />
     <entry file="file://$PROJECT_DIR$/lib/cayuga/object/factory_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="67">
@@ -1483,32 +1472,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/web/cayuga__object__factory.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/web/cayuga__object__logger.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="226">
-          <caret line="59" column="127" selection-start-line="59" selection-start-column="127" selection-end-line="59" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/cayuga__object__factory.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/web/cayuga__object__constants.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/test/logs/cayuga__object__constants.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test/logs/web/cayuga__object__factory.log" />
+    <entry file="file://$PROJECT_DIR$/spec/test/logs/web/cayuga__object__logger.log" />
+    <entry file="file://$PROJECT_DIR$/spec/test/logs/cayuga__object__factory.log" />
+    <entry file="file://$PROJECT_DIR$/spec/test/logs/web/cayuga__object__constants.log" />
+    <entry file="file://$PROJECT_DIR$/spec/test/logs/cayuga__object__constants.log" />
     <entry file="file://$PROJECT_DIR$/interface/src/assets/img/.gitkeep">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/.gitkeep">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/interface/browser_testing_spec.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/test/logs/.gitkeep">
@@ -1519,13 +1491,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/test/logs/alternate/.gitkeep">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/src/assets/scss/_settings.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -1540,6 +1505,86 @@
           <caret lean-forward="true" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/interface/layout_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/interface/browser_testing_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/interface.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/cayuga_spec.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/browser_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/test/test2018/web.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factory_information_helper.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/cayuga__object__factory.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_category_reports_2018.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_categories_810.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_script.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cayuga.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="47" selection-start-line="34" selection-start-column="1" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cayuga.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

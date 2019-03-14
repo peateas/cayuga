@@ -10,9 +10,6 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/interface/src" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/interface/dist" />
-      <excludeFolder url="file://$MODULE_DIR$/interface/src/styleguide" />
     </content>
     <orderEntry type="jdk" jdkName="ruby-2.4.4-p296" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
