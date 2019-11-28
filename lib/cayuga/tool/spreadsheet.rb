@@ -7,8 +7,8 @@ require 'rubyXL'
 require 'rubyXL/convenience_methods'
 
 module Cayuga
-  module Tools
-    # Cayuga Tools SpreadSheet
+  module Tool
+    # Cayuga Tool SpreadSheet
     class SpreadSheet
       def fetch(book)
         RubyXL::Parser.parse(book)

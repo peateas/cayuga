@@ -7,7 +7,7 @@
 require 'semantic_logger'
 
 module Cayuga
-  module Tools
+  module Utility
     # Cayuga Tools Loggable
     module Loggable
       def self.included(base)

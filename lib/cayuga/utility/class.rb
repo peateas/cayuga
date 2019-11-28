@@ -4,8 +4,8 @@
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
 module Cayuga
-  module Tools
-    # Cayuga Tools Class
+  module Utility
+    # Cayuga Utility Class
     module Class
       def stringify
         symbolize.stringify
@@ -28,5 +28,5 @@ module Cayuga
   end
 end
 
-Class.include(Cayuga::Tools::Class)
+Class.include(Cayuga::Utility::Class)
 

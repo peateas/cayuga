@@ -7,7 +7,7 @@
 require 'facets/string/methodize'
 
 module Cayuga
-  module Tools
+  module Utility
     # Cayuga Tools String
     module String
       def stringify
@@ -67,5 +67,5 @@ module Cayuga
   end
 end
 
-String.include(Cayuga::Tools::String)
+String.include(Cayuga::Utility::String)
 

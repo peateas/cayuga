@@ -3,7 +3,7 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-RSpec.describe Cayuga::Tools::String, :tools do
+RSpec.describe Cayuga::Utility::String, :tools do
 
   it 'produces string, symbol and class versions of itself' do
     ToolInformationHelper::STRING_SYMBOL_CLASS_EXAMPLES.each do |example|

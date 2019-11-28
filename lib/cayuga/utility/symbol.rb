@@ -7,7 +7,7 @@
 require 'facets/string/modulize'
 
 module Cayuga
-  module Tools
+  module Utility
     # Cayuga Tools Symbol
     module Symbol
       def stringify
@@ -40,5 +40,5 @@ module Cayuga
   end
 end
 
-Symbol.include(Cayuga::Tools::Symbol)
+Symbol.include(Cayuga::Utility::Symbol)
 

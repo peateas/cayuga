@@ -7,7 +7,7 @@ require 'cayuga'
 
 module Test2019
   class LoggingTest
-    include Cayuga::Tools::Loggable
+    include Cayuga::Utility::Loggable
 
     def make_logs
       log.info('info')

@@ -13,7 +13,7 @@ module Cayuga
   module Object
     # Cayuga Object Factory
     class Factory
-      include Tools::Loggable
+      include Utility::Loggable
       include FactoryHelper
 
       attr_reader :configuration_name

@@ -11,7 +11,7 @@ module Cayuga
 
     # Cayuga Object Object
     class Object
-      include Tools::Loggable
+      include Utility::Loggable
 
       attr_reader :configuration_name
 
