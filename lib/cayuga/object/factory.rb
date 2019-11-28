@@ -32,44 +32,6 @@ module Cayuga
         types[klass.symbolize]
       end
 
-      def registered_class?(klass)
-        types.key?(klass.symbolize)
-      end
-
-      def register_class(klass, type)
-        message = "'#{type}' must be object, singleton or named"
-        ok = %i[object singleton named].include? type.symbolize
-        raise ArgumentError, message unless ok
-
-        register_classes([klass], type)
-      end
-
-      def deregister_class(klass)
-        types.delete(klass.symbolize)
-      end
-
-      def registered?(klass, name = nil)
-        lookup_registered_instances(klass.symbolize, name) != nil
-      end
-
-      def register(instance, klass, name = nil)
-        key = klass.symbolize
-        type = type(key)
-        generate_registration_errors(klass, name, key, type)
-        case type
-          when :named
-            value = instances[key]
-            if value.nil?
-              value = {}
-              instances[key] = value
-            end
-            value[name] = instance
-          else
-            instances[key] = instance
-        end
-        instance
-      end
-
       def [](klass, name = nil)
         key = klass.symbolize
         value = lookup_registered_instances(key, name)
@@ -97,6 +59,39 @@ module Cayuga
         end
       end
 
+      # protected -- these should only be called by auxiliary factory objects
+      # not exactly as cayuga model registers classes for new things
+
+      def register_class(klass, type)
+        message = "'#{type}' must be object, singleton or named"
+        ok = %i[object singleton named].include? type.symbolize
+        raise ArgumentError, message unless ok
+
+        register_classes([klass], type)
+      end
+
+      def registered?(klass, name = nil)
+        lookup_registered_instances(klass.symbolize, name) != nil
+      end
+
+      def register(instance, klass, name = nil)
+        key = klass.symbolize
+        type = type(key)
+        generate_registration_errors(klass, name, key, type)
+        case type
+          when :named
+            value = instances[key]
+            if value.nil?
+              value = {}
+              instances[key] = value
+            end
+            value[name] = instance
+          else
+            instances[key] = instance
+        end
+        instance
+      end
+
       private
 
       attr_reader :configuration, :types, :instances
@@ -109,6 +104,10 @@ module Cayuga
         @instances = {}
         setup_primary_configurations
         log_missing_keys unless missing_keys.empty?
+      end
+
+      def deregister_class(klass)
+        types.delete(klass.symbolize)
       end
 
     end

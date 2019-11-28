@@ -1,6 +1,7 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
+# noinspection RubyResolve
 require 'semantic_logger'
 
 module Cayuga

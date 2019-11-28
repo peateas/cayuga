@@ -12,29 +12,15 @@ module Cayuga
         name != nil
       end
 
-      def self.primary?(_name)
-        true
-      end
-
-      def self.primary(name)
-        name
-      end
-
       def self.create(factory, configuration, name)
-        if factory.registered?(self, name)
-          raise "#{stringify}[#{name}] already registered"
-        end
+        registered = factory.registered?(self, name)
+        raise "#{stringify}[#{name}] already registered" if registered
 
-        if primary?(name)
-          primary = name
-          alternate = nil
-        else
-          primary = primary(name)
-          alternate = name
-        end
-        verify_name_validity(factory, primary, alternate)
-        instance = create_primary(factory, configuration, primary(name))
-        factory.register(instance, self, alternate) unless alternate.nil?
+        valid = valid_name?(factory, name)
+        raise "'#{self}['#{name}'] is not a valid #{self}" unless valid
+
+        instance = new(factory, configuration, name)
+        factory.register(instance, self, name)
         instance
       end
 
@@ -54,39 +40,7 @@ module Cayuga
       def initialize(factory, configuration, name)
         super(factory, configuration)
         @object_name = name
-        # TO DO: alternative names
       end
-
-      def self.verify_name_validity(factory, name, alternate)
-        # check validity of name
-        unless valid_name?(factory, name)
-          raise "'#{self}['#{name}'] is not a valid #{self}"
-        end
-
-        # name valid
-        # check alternate valid if exists
-        unless alternate.nil?
-          unless valid_name?(factory, alternate)
-            raise "'#{self}['#{alternate}'] is not a valid #{self}"
-          end
-        end
-        # alternate valid
-        true
-      end
-
-      private_class_method :verify_name_validity
-
-      def self.create_primary(factory, configuration, name)
-        if factory.registered?(self, name)
-          instance = factory[self, name]
-        else
-          instance = new(factory, configuration, name)
-          factory.register(instance, self, name)
-        end
-        instance
-      end
-
-      private_class_method :create_primary
 
     end
   end
