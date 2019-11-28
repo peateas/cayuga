@@ -40,7 +40,8 @@ RSpec.describe Cayuga::Tool::SpreadSheet do
       be_nil,
       "no sheet 'tokens' in book #{tokens}"
     )
-
+    pending('need to finish')
+    raise
   end
 
 end

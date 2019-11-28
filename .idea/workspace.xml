@@ -4,22 +4,12 @@
     <option name="FILTER_RESOLVED_ITEMS" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="initial spreadsheet implementation, fixed new rubocop errors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cayuga.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cayuga.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/object.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/class.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/utility/class.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/loggable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/utility/loggable.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/spreadsheet.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/tool/spreadsheet.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/string.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/utility/string.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/symbol.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/utility/symbol.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/test/test2019/logging_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2019/logging_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/tools/class_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/class_spec.rb" afterDir="false" />
+    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="split tools module to tool and utility">
+      <change beforePath="$PROJECT_DIR$/spec/tools/class_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/utilities/class_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/utilities/loggable_object_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/tools/spreadsheet_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/spreadsheet_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/tools/string_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/string_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/tools/symbol_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/symbol_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/tools/string_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/utilities/string_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/tools/symbol_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/utilities/symbol_spec.rb" afterDir="false" />
     </list>
     <list id="1da64f63-0574-4053-ad4b-06df3dfca8ec" name=".idea" comment="update workspace" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,6 +48,7 @@
         <option value="RSpec Test Template" />
         <option value="RSpec Template" />
         <option value="Ruby Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -102,9 +93,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OneDrive\idea\cayuga-903\spec\tools" />
       <recent name="C:\OneDrive\idea\cayuga-903\lib\cayuga\tools" />
       <recent name="C:\OneDrive\idea\cayuga-903\lib\cayuga\factory" />
-      <recent name="C:\OneDrive\idea\cayuga-903\spec\tools" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib" />
     </key>
@@ -232,6 +223,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Cayuga::Tool::SpreadSheet" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="cayuga" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tools/spreadsheet_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Cayuga::Tool::SpreadSheet" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Cayuga::Tools::SpreadSheet ... (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="cayuga" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -262,62 +283,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Cayuga::Tools::SpreadSheet ..." type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+    <configuration name="spreadsheet" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="cayuga" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/lib/cayuga/tool" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tools/spreadsheet_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Cayuga::Tools::SpreadSheet should be able to open the empty spreadsheet" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="spreadsheet_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="cayuga" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tools/spreadsheet_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/lib/cayuga/tool/spreadsheet.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -338,18 +314,18 @@
     <list>
       <item itemvalue="Mocha.JavascriptTests" />
       <item itemvalue="RSpec.All specs in cayuga-903: cayuga" />
-      <item itemvalue="RSpec.spreadsheet_spec" />
-      <item itemvalue="RSpec.Cayuga::Tools::SpreadSheet ..." />
       <item itemvalue="RSpec.All specs in spec: cayuga" />
       <item itemvalue="RSpec.Cayuga::Tools::SpreadSheet ... (1)" />
+      <item itemvalue="Ruby.spreadsheet" />
+      <item itemvalue="RSpec.Cayuga::Tool::SpreadSheet" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="RSpec.All specs in cayuga-903: cayuga" />
+        <item itemvalue="RSpec.Cayuga::Tool::SpreadSheet" />
+        <item itemvalue="Ruby.spreadsheet" />
         <item itemvalue="RSpec.Cayuga::Tools::SpreadSheet ... (1)" />
         <item itemvalue="RSpec.All specs in spec: cayuga" />
-        <item itemvalue="RSpec.Cayuga::Tools::SpreadSheet ..." />
-        <item itemvalue="RSpec.spreadsheet_spec" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +451,7 @@
       <workItem from="1574914853364" duration="1141000" />
       <workItem from="1574916003330" duration="1716000" />
       <workItem from="1574917724476" duration="45000" />
-      <workItem from="1574918016795" duration="12459000" />
+      <workItem from="1574918016795" duration="12974000" />
     </task>
     <task id="LOCAL-00001" summary="safety commit">
       <created>1539927767971</created>
@@ -813,7 +789,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574925793843</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="split tools module to tool and utility">
+      <created>1574935576266</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1574935576266</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -868,7 +851,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tally methods in class Integer" />
     <MESSAGE value="just before decision to have context manager and context in cayuga/module" />
     <MESSAGE value="removed all tally classes and specification because they are being moved to cayuga/model" />
     <MESSAGE value="added runtime dependencies" />
@@ -893,7 +875,8 @@
     <MESSAGE value="refactoring:  minor changes, deregister class, from February 2019" />
     <MESSAGE value="refactoring:  minor changes including Test2018 to Test2019" />
     <MESSAGE value="initial spreadsheet implementation, fixed new rubocop errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial spreadsheet implementation, fixed new rubocop errors" />
+    <MESSAGE value="split tools module to tool and utility" />
+    <option name="LAST_COMMIT_MESSAGE" value="split tools module to tool and utility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
