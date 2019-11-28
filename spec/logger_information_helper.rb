@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
@@ -25,8 +27,11 @@ module LoggerInformationHelper
     target.log.level = level
     a_factory.logger.log_appender(target).level = nil
     logs = get_logs(a_factory.logger.log_filename(target), &block)
-    expect(logs.size).to be == count,
+    # noinspection RubyNilAnalysis
+    expect(logs.size).to(
+      be == count,
       "expected #{count} logs for #{target}, got #{logs.size}"
+    )
   end
 
   def get_logs(name, count: 5)

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2016-2018 Patrick Thomas. All rights reserved.
 #
@@ -5,7 +7,7 @@ require 'cayuga'
 
 module AlternateFactoryHelper
   ALTERNATIVE_CONFIGURATION_INFORMATION =
-    'spec/test/configuration/cayuga_alternate_factory_test_config.json'.freeze
+    'spec/test/configuration/cayuga_alternate_factory_test_config.json'
   ALTERNATIVE_FACTORY =
     Cayuga::Object::Factory.new ALTERNATIVE_CONFIGURATION_INFORMATION
 

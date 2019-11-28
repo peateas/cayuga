@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'cayuga/version'
 require 'cayuga/tools/string'
 require 'cayuga/tools/symbol'

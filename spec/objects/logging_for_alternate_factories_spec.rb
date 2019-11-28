@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
@@ -22,8 +24,10 @@ RSpec.describe 'logging for alternate factories', :alternate_factory do
 
   specify 'alternate factory has annotation marker' do
     # noinspection RubyResolve
-    expect(alternate_constants[:log_annotation_marker]).not_to be_nil,
+    expect(alternate_constants[:log_annotation_marker]).not_to(
+      be_nil,
       'alternate factory has no annotation marker'
+    )
   end
 
   specify 'factory log directories differ' do

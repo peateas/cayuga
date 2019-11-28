@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
@@ -26,8 +28,10 @@ RSpec.describe Cayuga::Object::Logger do
   end
 
   it 'should have a file for its log' do
-    expect(subject.class.log_file).not_to be(nil),
+    expect(subject.class.log_file).not_to(
+      be(nil),
       "no log file for #{subject.class.stringify}"
+    )
   end
 
   it 'should be able to access logs' do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bundler/setup'
 require 'cayuga'
 require 'factory_information_helper'
@@ -18,7 +20,7 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     CONFIGURATION_INFORMATION =
-      'spec/test/configuration/cayuga_test_config.json'.freeze
+      'spec/test/configuration/cayuga_test_config.json'
     FACTORY = Cayuga::Object::Factory.new CONFIGURATION_INFORMATION
   end
 

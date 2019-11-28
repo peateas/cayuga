@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
@@ -38,7 +40,7 @@ RSpec.describe 'factory_missing_configuration' do
     keys.each do |_constant, key|
       target = /missing key -- {:key=>:#{key}/
       expect(target.match(list)).not_to be_nil,
-        "no log for missing '#{key}' value"
+                                        "no log for missing '#{key}' value"
     end
   end
 

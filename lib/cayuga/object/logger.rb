@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
@@ -85,6 +87,14 @@ module Cayuga
       end
 
       def make_appender(name, filename, stream, filter, level)
+        filename, log = set_appender_log(filename, filter, name, stream)
+        log.name = log_appender_name(name)
+        log.level = level
+        @logs[name.symbolize] = filename || stream || name.stringify
+        log
+      end
+
+      def set_appender_log(filename, filter, name, stream)
         if stream.nil?
           if filename.nil?
             filename = factory._logs_directory + '/' + name.classify.log_file
@@ -93,10 +103,7 @@ module Cayuga
         else
           log = SemanticLogger.add_appender(io: stream, filter: filter)
         end
-        log.name = log_appender_name(name)
-        log.level = level
-        @logs[name.symbolize] = filename || stream || name.stringify
-        log
+        [filename, log]
       end
 
       def remove_any_orphan_appender(name)

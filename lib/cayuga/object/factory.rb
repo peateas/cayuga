@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
@@ -51,9 +53,7 @@ module Cayuga
             instances.delete(key)
           when :named
             value = instances[key]
-            if value
-              value.delete(name)
-            end
+            value&.delete(name)
           else
             raise "bad type '#{type}'"
         end

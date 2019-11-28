@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
@@ -19,8 +21,8 @@ RSpec.describe Test2019::NamedObject do
             /^#<Test2019::NamedObject:\d* @one="first" @two="second">$/
           )
         else
-        expect(object.inspect)
-          .to match(/^#<Test2019::NamedObject:\d* @name="name">$/)
+          expect(object.inspect)
+            .to match(/^#<Test2019::NamedObject:\d* @name="name">$/)
       end
     end
   end
