@@ -3,7 +3,7 @@
 #
 require 'cayuga'
 
-module Test2018
+module Test2019
   class LoggingTest
     include Cayuga::Tools::Loggable
 

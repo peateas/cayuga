@@ -7,8 +7,8 @@ RSpec.describe 'cayuga object' do
       factory,
       factory[Cayuga::Object::Constants],
       factory[Cayuga::Object::Logger],
-      factory[Test2018::Singleton],
-      factory[Test2018::NamedObject, :one]
+      factory[Test2019::Singleton],
+      factory[Test2019::NamedObject, :one]
     ]
   end
   let(:logger) { factory[Cayuga::Object::Logger] }

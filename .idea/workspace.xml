@@ -4,20 +4,21 @@
     <option name="FILTER_RESOLVED_ITEMS" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="refactoring:  removal of web interface, cleanup">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5ed2111a-a046-4a2c-ad1a-1281a894a907" name="Default" comment="refactoring:  minor changes, deregister class, from February 2019">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cayuga.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cayuga.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/factory.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/object/named_object.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cayuga/tools/loggable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga/tools/loggable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/cayuga.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cayuga.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/objects/factory_classes_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/factory_classes_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/objects/factory_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/factory_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/objects/logger_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/logger_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/logging_for_cayuga_objects_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/objects/named_object__spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/objects/named_object__spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/configuration/cayuga_test_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/configuration/cayuga_test_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/logging_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2019/logging_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/named_object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2019/named_object.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/object.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2019/object.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/test/test2018/singleton.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/test/test2019/singleton.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/tool_information_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tool_information_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/tools/loggable_object_spec.rb" afterDir="false" />
     </list>
     <list id="1da64f63-0574-4053-ad4b-06df3dfca8ec" name=".idea" comment="update workspace" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,56 +56,9 @@
         <option value="HTML File" />
         <option value="RSpec Test Template" />
         <option value="RSpec Template" />
+        <option value="Ruby Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>on</find>
-      <find>list group</find>
-      <find>grid-x</find>
-      <find>xy-grid</find>
-      <find>font</find>
-      <find>break</find>
-      <find>push</find>
-      <find>grid</find>
-      <find>transform</find>
-      <find>is-open-left</find>
-      <find>is-open</find>
-      <find>translateX</find>
-      <find>position</find>
-      <find>left area</find>
-      <find>gutter</find>
-      <find>global-lineheight</find>
-      <find>right-areas</find>
-      <find>aside</find>
-      <find>xy-cell-block</find>
-      <find>$unit</find>
-      <find>list-group</find>
-      <find>off-canvas</find>
-      <find>what</find>
-      <find>export</find>
-      <find>breakpoints</find>
-      <find>save_path</find>
-      <find>console.log</find>
-      <find>console</find>
-      <find>``</find>
-      <find>large</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>#</replace>
-      <replace>symbol</replace>
-      <replace>klass</replace>
-      <replace>target</replace>
-      <replace>of</replace>
-      <replace>right-areas</replace>
-      <replace>Right Area</replace>
-      <replace>off</replace>
-      <replace>right-area</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\peate\OneDrive\IdeaProjects\cayuga809</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,13 +100,6 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib\cayuga\object" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test\configuration" />
-      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\tally" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -162,6 +109,13 @@
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test\configuration" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\interface\src\assets\scss" />
       <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\interface" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OneDrive\idea\cayuga-903\spec\tools" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\lib\cayuga\object" />
+      <recent name="C:\Users\peate\OneDrive\IdeaProjects\cayuga809\spec\test\configuration" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -176,10 +130,66 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.spreadsheet_spec">
+  <component name="RunManager" selected="RSpec.All specs in cayuga-903: cayuga">
     <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="cayuga" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="C:\OneDrive\idea\cayuga-903\spec\tools\spreadsheet_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
@@ -221,32 +231,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="--no-color" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="spreadsheet_spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="cayuga" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -261,7 +245,7 @@
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/spreadsheets/spreadsheet_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/tools/spreadsheet_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
@@ -329,8 +313,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="RSpec.spreadsheet_spec" />
         <item itemvalue="RSpec.All specs in cayuga-903: cayuga" />
+        <item itemvalue="RSpec.spreadsheet_spec" />
+        <item itemvalue="RSpec.spreadsheet_spec" />
         <item itemvalue="Ruby.web" />
         <item itemvalue="Ruby.cayuga" />
       </list>
@@ -456,7 +441,9 @@
       <workItem from="1574914603456" duration="124000" />
       <workItem from="1574914732255" duration="116000" />
       <workItem from="1574914853364" duration="1141000" />
-      <workItem from="1574916003330" duration="729000" />
+      <workItem from="1574916003330" duration="1716000" />
+      <workItem from="1574917724476" duration="45000" />
+      <workItem from="1574918016795" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="safety commit">
       <created>1539927767971</created>
@@ -773,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552560765336</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="refactoring:  minor changes, deregister class, from February 2019">
+      <created>1574916791874</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1574916791874</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -828,7 +822,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactored all cayuga objects into class heirarchy" />
     <MESSAGE value="refactor logging into loggable objects, logger and cayuga objects + added logger configuration pending examples" />
     <MESSAGE value="completed factory and logger expect for logging creation and release&#10;and log configuration" />
     <MESSAGE value="tally methods in class Integer" />
@@ -853,7 +846,8 @@
     <MESSAGE value="added index.js to interface config" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="refactoring:  removal of web interface, cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring:  removal of web interface, cleanup" />
+    <MESSAGE value="refactoring:  minor changes, deregister class, from February 2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring:  minor changes, deregister class, from February 2019" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

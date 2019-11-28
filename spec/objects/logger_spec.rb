@@ -1,7 +1,7 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'test/test2018/logging_test'
+require 'test/test2019/logging_test'
 
 RSpec.describe Cayuga::Object::Logger do
   subject { factory[Cayuga::Object::Logger] }

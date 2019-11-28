@@ -1,13 +1,13 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'test/test2018/named_object'
+require 'test/test2019/named_object'
 
-RSpec.describe Test2018::NamedObject do
+RSpec.describe Test2019::NamedObject do
   subject do
     [
-      factory[Test2018::NamedObject, 'name'],
-      factory[Test2018::NamedObject, { one: 'first', two: 'second' }]
+      factory[Test2019::NamedObject, 'name'],
+      factory[Test2019::NamedObject, { one: 'first', two: 'second' }]
     ]
   end
 
@@ -16,11 +16,11 @@ RSpec.describe Test2018::NamedObject do
       case object.name
         when Hash
           expect(object.inspect).to match(
-            /^#<Test2018::NamedObject:\d* @one="first" @two="second">$/
+            /^#<Test2019::NamedObject:\d* @one="first" @two="second">$/
           )
         else
         expect(object.inspect)
-          .to match(/^#<Test2018::NamedObject:\d* @name="name">$/)
+          .to match(/^#<Test2019::NamedObject:\d* @name="name">$/)
       end
     end
   end

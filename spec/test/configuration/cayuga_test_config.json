@@ -1,13 +1,13 @@
 {
-  "configuration_name": "Test Configuration for Model 2018 Factory",
+  "configuration_name": "Test Configuration for Model 2019 Factory",
   "object_classes": [
-    "Test2018::Object"
+    "Test2019::Object"
   ],
   "singleton_classes": [
-    "Test2018::Singleton"
+    "Test2019::Singleton"
   ],
   "named_object_classes": [
-    "Test2018::NamedObject"
+    "Test2019::NamedObject"
   ],
   "constants": {
     "log_annotation_marker": "",

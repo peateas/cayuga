@@ -1,10 +1,10 @@
 #
 # Copyright (c) 2018 Patrick Thomas.  All rights reserved.
 #
-require 'test/test2018/logging_test'
+require 'test/test2019/logging_test'
 
 RSpec.describe 'loggable objects' do
-  subject { Test2018::LoggingTest }
+  subject { Test2019::LoggingTest }
   let(:logger) { factory[Cayuga::Object::Logger] }
   it 'should have loggers' do
     expect(subject).to be_instance_of Class

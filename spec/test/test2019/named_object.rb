@@ -3,8 +3,7 @@
 #
 require 'cayuga'
 
-module Test2018
-  class Singleton < Cayuga::Object::Singleton
+module Test2019
+  class NamedObject < Cayuga::Object::NamedObject
   end
 end
-
